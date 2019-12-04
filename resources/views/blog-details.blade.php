@@ -6,12 +6,12 @@
 
 <!-- Stylesheets -->
 
-<link href="../../resources/sass/bootstrap.css" rel="stylesheet">
-<link href="../../resources/sass/style.css" rel="stylesheet">
-<link href="../../resources/sass/responsive.css" rel="stylesheet">
+<link href="/sass/bootstrap.css" rel="stylesheet">
+<link href="/sass/style.css" rel="stylesheet">
+<link href="/sass/responsive.css" rel="stylesheet">
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href=".././resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -114,7 +114,7 @@
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="../../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -181,7 +181,7 @@
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -210,7 +210,7 @@
 
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../../resources/images/backblog.jpg)">
+    <section class="page-title" style="background-image:url(/images/backblog.jpg)">
         <div class="container">
             <h1>{!! $articles->titre!!}</h1>
         </div>
@@ -543,7 +543,7 @@ jQuery(document).ready(function() {
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">

@@ -6,13 +6,13 @@
 
 <!-- Stylesheets -->
 
-<link href="../../resources/sass/bootstrap.css" rel="stylesheet">
-<link href="../../resources/sass/style.css" rel="stylesheet">
-<link href="../../resources/sass/responsive.css" rel="stylesheet">
+<link href="/sass/bootstrap.css" rel="stylesheet">
+<link href="/sass/style.css" rel="stylesheet">
+<link href="/sass/responsive.css" rel="stylesheet">
 <!-- Fav Icons -->
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="../../resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/resources/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -112,7 +112,7 @@
     <div class="container-fluid clearfix">
             
     <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../../resources/images/grand-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/grand-logo.png" alt="" title=""></a>
             </div>
         <div class="float-right upper-right clearfix">
             
@@ -178,7 +178,7 @@
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -208,7 +208,7 @@
 
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../../resources/images/background_projet.jpg)">
+    <section class="page-title" style="background-image:url(/images/background_projet.jpg)">
         <div class="container">
             <h1>{!! $projets->titre!!}</h1>
         </div>
@@ -532,7 +532,7 @@
     </div>
 
      <!-- Call To Action -->
-     <section class="subscribe-section" style="background-image: url(../../resources/images/newletters.jpg)">
+     <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
             <div class="row">
                 <div class="title-column col-lg-8">
@@ -567,7 +567,7 @@
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">
@@ -646,19 +646,19 @@
 
 <!-- jequery plugins -->
 
-<script src="../../resources/js/jquery.js"></script>
-<script src="../../resources/js/popover.js"></script>
-<script src="../../resources/js/bootstrap.min.js"></script>
+<script src="/js1/jquery.js"></script>
+<script src="/js1/popover.js"></script>
+<script src="/js1/bootstrap.min.js"></script>
 
-<script src="../../resources/js/wow.js"></script>
-<script src="../../resources/js/owl.js"></script>
-<script src="../../resources/js/validate.js"></script>
-<script src="../../resources/js/mixitup.js"></script>
-<script src="../../resources/js/isotope.js"></script>
-<script src="../../resources/js/appear.js"></script>
-<script src="../../resources/js/jquery.fancybox.js"></script>
+<script src="/js1/wow.js"></script>
+<script src="/js1/owl.js"></script>
+<script src="/js1/validate.js"></script>
+<script src="/js1/mixitup.js"></script>
+<script src="/js1/isotope.js"></script>
+<script src="/js1/appear.js"></script>
+<script src="/js1/jquery.fancybox.js"></script>
 
-<script src="../../resources/js/script.js"></script>
+<script src="/js1/script.js"></script>
 
 </body>
 </html>

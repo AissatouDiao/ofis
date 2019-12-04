@@ -11,8 +11,8 @@ include('../resources/views/header.php');
 
 <!-- Fav Icons -->
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="../resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -111,7 +111,7 @@ include('../resources/views/header.php');
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -124,7 +124,7 @@ include('../resources/views/header.php');
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>c
                         </button>
                     </div>
                     
@@ -178,7 +178,7 @@ include('../resources/views/header.php');
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -206,7 +206,7 @@ include('../resources/views/header.php');
 </header>
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../resources/images/background_projet.jpg)">
+    <section class="page-title" style="background-image:url(/images/background_projet.jpg)">
         <div class="container">
             <h1>Les Projets</h1>
         </div>
@@ -314,7 +314,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">

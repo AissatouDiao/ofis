@@ -14,8 +14,8 @@ include('../resources/views/header.php');
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="../resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -115,7 +115,7 @@ include('../resources/views/header.php');
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -182,7 +182,7 @@ include('../resources/views/header.php');
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -210,7 +210,7 @@ include('../resources/views/header.php');
 </header>
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../resources/images/blue-ball.jpg)">
+    <section class="page-title" style="background-image:url(/images/blue-ball.jpg)">
         <div class="container">
             <h1>A propos de nous</h1>
         </div> 
@@ -366,7 +366,7 @@ include('../resources/views/header.php');
     </div>
 
     <!-- Disaster response -->
-    <section class="parallax-section" style="background-image: url(../resources/images/blue-heart1.jpg)">
+    <section class="parallax-section" style="background-image: url(/images/blue-heart1.jpg)">
         <div class="container">
             <h1>Nous aidons des familles à vivre dans un meilleur cadre <br> en leur facilitant l'accès aux latrines</h1>
             <h3>Aider nous à leur venir en aide en faisant un don <span class="border-shape"></span></h3>
@@ -430,7 +430,7 @@ include('../resources/views/header.php');
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/team.png"  style="width:128px;128px" alt=""></div>
+                <div class="icon-box"><img src="/images/team.png"  style="width:128px;128px" alt=""></div>
                 <h1>OFIS <span>Team</span></h1>
                 <div class="text">L'assainissement,une priorité pour tous </div>
             </div>
@@ -439,7 +439,7 @@ include('../resources/views/header.php');
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic2.jpg" style="width:263px;height:270px;"alt="">
+                            <img src="/images/pic2.jpg" style="width:263px;height:270px;"alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -460,7 +460,7 @@ include('../resources/views/header.php');
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic1.jpg" alt="">
+                            <img src="/images/pic1.jpg" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -520,7 +520,7 @@ include('../resources/views/header.php');
  
 
     <!-- Parallax section -->
-    <section class="parallax-section" style="background-image: url(../resources/images/blue-heart1.jpg)">
+    <section class="parallax-section" style="background-image: url(/images/blue-heart1.jpg)">
         <div class="container">
             <h1>Nous aidons des familles à vivre dans un meilleur cadre <br> en leur facilitant l'accès aux latrines</h1>
             <h3>Aider nous à leur venir en aide en faisant un don <span class="border-shape"></span></h3>
@@ -541,7 +541,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">

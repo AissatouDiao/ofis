@@ -16,8 +16,8 @@ include('../resources/views/header.php');
   <meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Fav Icons -->
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="../resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -119,7 +119,7 @@ include('../resources/views/header.php');
     <div class="container-fluid clearfix">
             
     <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/grand-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/grand-logo.png" alt="" title=""></a>
             </div>
         <div class="float-right upper-right clearfix">
             
@@ -137,6 +137,7 @@ include('../resources/views/header.php');
                     
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
+                        <li class="current" ><a href="{{ url('home') }}">Accueil</a></li>
                         <li class="current" ><a href="{{ url('home') }}">Accueil</a></li>
                             <li><a href="{{ url('projets' )}}">Nos projets</a></li>
                             <li><a href="{{ url('blog') }}">Blog</a></li>
@@ -185,7 +186,7 @@ include('../resources/views/header.php');
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -220,7 +221,7 @@ include('../resources/views/header.php');
         <div class="container-fluid">
             <ul class="main-slider-carousel owl-carousel owl-theme slide-nav">
             <li class="slider-wrapper">
-                    <div class="image"><img src="../resources/images/image2.jpg" style="width:1920px;height:760px;" alt=""></div>
+                    <div class="image"><img src="/images/image2.jpg" style="width:1920px;height:760px;" alt=""></div>
                     <div class="slider-caption light text-center">
                         <div class="container">
                             <h3>Bienvenue sur notre plateforme OFIS<span class="border-shape"></span></h3>
@@ -232,7 +233,7 @@ include('../resources/views/header.php');
                     <div class="slide-overlay"></div>
                 </li>
                 <li class="slider-wrapper">
-                    <div class="image"><img src="../resources/images/image2.jpg" style="width:1920px;height:760px;" alt=""></div>
+                    <div class="image"><img src="/images/image2.jpg" style="width:1920px;height:760px;" alt=""></div>
                     <div class="slider-caption light text-center">
                         <div class="container">
                             <h3>Bienvenue sur notre plateforme OFIS<span class="border-shape"></span></h3>
@@ -244,7 +245,7 @@ include('../resources/views/header.php');
                     <div class="slide-overlay"></div>
                 </li>
                 <li class="slider-wrapper">
-                    <div class="image"><img src="../resources/images/image3.jpg" style="width:1920px;height:760px;" alt=""></div>
+                    <div class="image"><img src="/images/image3.jpg" style="width:1920px;height:760px;" alt=""></div>
                     <div class="slider-caption light text-center">
                         <div class="container">
                             <h3>Bienvenue sur notre plateforme OFIS <span class="border-shape"></span></h3>
@@ -322,7 +323,7 @@ include('../resources/views/header.php');
                 <div class="col-lg-5 image-block-one">
                
                   <div class="row m-0 d-flex justify-content-center">
-                <embed src="../resources/images/video.mp4" autostart="false" height="400px" width="100%" />
+                <embed src="/images/video.mp4" autostart="false" height="400px" width="100%" />
                </div>
                </div>
                <div>
@@ -366,7 +367,7 @@ include('../resources/views/header.php');
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/fusee.png" alt="" ></div>
+                <div class="icon-box"><img src="/images/fusee.png" alt="" ></div>
                 <h1>Projets <span>en cours</span></h1>
                 <div class="text"></div>
             </div>
@@ -432,7 +433,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Fact Counter -->
-    <div class="fact-counter sp-two" style="background-image: url(../resources/images/blue-ball.jpg)">
+    <div class="fact-counter sp-two" style="background-image: url(/images/blue-ball.jpg)">
         <div class="container">
             <div class="row">
 
@@ -493,11 +494,11 @@ include('../resources/views/header.php');
     </div>
 
     <!-- Mission Section -->
-    <section class="mission-section sp-one" style="background-image: url(../resources/images/b.jpg">
+    <section class="mission-section sp-one" style="background-image: url(/images/b.jpg">
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/MG.png"  style="width:128px;128px"alt=""></div>
+                <div class="icon-box"><img src="/images/MG.png"  style="width:128px;128px"alt=""></div>
                 <h1 style="color:white"><span>Missions</span></h1>
                 <div class="text"></div>
             </div>
@@ -616,7 +617,7 @@ include('../resources/views/header.php');
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/team.png"  style="width:128px;128px;" alt=""></div>
+                <div class="icon-box"><img src="/images/team.png"  style="width:128px;128px;" alt=""></div>
                 <h1>OFIS <span>Team</span></h1>
                 <div class="text">OFIS, la force vive pour un assainissement durable</div>
             </div>
@@ -625,7 +626,7 @@ include('../resources/views/header.php');
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic2.jpg" style="width:360px;height:280px;" alt="">
+                            <img src="/images/pic2.jpg" style="width:360px;height:280px;" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -646,7 +647,7 @@ include('../resources/views/header.php');
                 <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic1.jpg"  style="width:360px;height:280px;" alt="">
+                            <img src="/images/pic1.jpg"  style="width:360px;height:280px;" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -667,7 +668,7 @@ include('../resources/views/header.php');
                  <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic3.jpg" style="width:360px;height:280px;" alt="">
+                            <img src="/images/pic3.jpg" style="width:360px;height:280px;" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -688,7 +689,7 @@ include('../resources/views/header.php');
                    <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic4.jpg" style="width:360px;height:280px;" alt="">
+                            <img src="/images/pic4.jpg" style="width:360px;height:280px;" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -710,7 +711,7 @@ include('../resources/views/header.php');
               <div class="team-block">
                     <div class="inner-box">
                         <div class="image">
-                            <img src="../resources/images/pic5.jpg" style="width:360px;height:280px;" alt="">
+                            <img src="/images/pic5.jpg" style="width:360px;height:280px;" alt="">
                             <div class="overlay-box">
                                 <ul class="social-icon-one">
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -735,7 +736,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Parallax section -->
-    <section class="parallax-section" style="background-image: url(../resources/images/blue-heart1.jpg)">
+    <section class="parallax-section" style="background-image: url(/images/blue-heart1.jpg)">
         <div class="container">
             <h1>Nous aidons des familles à vivre dans un meilleur cadre <br> en leur facilitant l'accès aux latrines</h1>
             <h3>Aider nous à leur venir en aide en faisant un don <span class="border-shape"></span></h3>
@@ -779,7 +780,7 @@ include('../resources/views/header.php');
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/plume.png"  style="width:128px;128px"alt=""></div>
+                <div class="icon-box"><img src="/images/plume.png"  style="width:128px;128px"alt=""></div>
                 <h1>Articles<span> Récents</span></h1>
                 <div class="text"></div>
             </div>
@@ -855,7 +856,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="/home"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="/home"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">

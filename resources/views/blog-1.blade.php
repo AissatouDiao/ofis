@@ -9,8 +9,8 @@
 include('../resources/views/header.php');
 ?>
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="../resources/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="../resources/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -106,7 +106,7 @@ include('../resources/views/header.php');
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer logo">
-            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -173,7 +173,7 @@ include('../resources/views/header.php');
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -202,7 +202,7 @@ include('../resources/views/header.php');
 
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../resources/images/backblog.jpg)">
+    <section class="page-title" style="background-image:url(/images/backblog.jpg)">
         <div class="container">
             <h1>Bienvenue</h1>
         </div>
@@ -291,7 +291,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">
