@@ -19,12 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body  style="background: url(../resources/images/a.jpg);background-repeat:no-repeat;background-size: cover;">
+<body  style="background: url(/images/a.jpg);background-repeat:no-repeat;background-size: cover;">
     <div id="app" >
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                 <img src="../resources/images/petit-logo.png" alt="OFIS assainissement">
+                 <img src="/images/petit-logo.png" alt="OFIS assainissement">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

@@ -137,7 +137,7 @@ include('../resources/views/header.php');
                     
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                        <li class="current" ><a href="{{ url('home') }}">Accueil</a></li>
+                       
                         <li class="current" ><a href="{{ url('home') }}">Accueil</a></li>
                             <li><a href="{{ url('projets' )}}">Nos projets</a></li>
                             <li><a href="{{ url('blog') }}">Blog</a></li>
