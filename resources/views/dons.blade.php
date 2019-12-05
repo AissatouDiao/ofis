@@ -212,7 +212,7 @@ include('../resources/views/header.php');
 <!--End Sticky Header-->
 </header>
 
-<section>
+<section style="background-image:url(/images/dons.jpg)">
 <div class="container">
         <div class="donate-form-area">
             <div class="section-title center">
@@ -226,35 +226,7 @@ include('../resources/views/header.php');
             <script>
             var montant=document.getElementById('donate-amount');
             </script>
-           
-                <ul class="chicklet-list clearfix">
-                    <li>
-                        <input type="radio" id="donate-amount-1" name="donate-amount" />
-                        <label for="donate-amount-1" data-amount="1000" >1000</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="donate-amount-2" name="donate-amount" checked="checked" />
-                        <label for="donate-amount-2" data-amount="2000"> 2000</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="donate-amount-3" name="donate-amount" />
-                        <label for="donate-amount-3" data-amount="3000">3000 </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="donate-amount-4" name="donate-amount" />
-                        <label for="donate-amount-4" data-amount="4000">4000 </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="donate-amount-5" name="donate-amount" />
-                        <label for="donate-amount-5" data-amount="5000">5000</label>
-                    </li>
-                    <li class="other-amount">
-
-                        <div class="input-container" data-message="Every dollar you donate helps end hunger.">
-                            <span>Or</span><input type="number" id="other-amount" name="montant" placeholder="Other Amount"  />
-                        </div>
-                    </li>
-                </ul>
+        
 
                 <h3>Informations sur le don</h3>
 
@@ -262,7 +234,7 @@ include('../resources/views/header.php');
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
-                                <p>Nom</p>
+                                <p>Nom*</p>
                                 
                                 <input type="text" name="nom" placeholder="">
                                 {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
@@ -270,7 +242,7 @@ include('../resources/views/header.php');
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-                                <p>Prénom</p>
+                                <p>Prénom*</p>
                                 
                                 <input type="text" name="prenom" placeholder="">
                                 {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
@@ -285,18 +257,25 @@ include('../resources/views/header.php');
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('adresse') ? 'has-error' : '' !!}">
-                                <p>Address*</p>
+                                <p>Adresse*</p>
                                 <input type="text" name="adresse" placeholder="">
                                 {!! $errors->first('adresse', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('telephone') ? 'has-error' : '' !!}">
-                                <p>Phn Num*</p>
-                                <input type="text" name="telephone" placeholder="">
+                                <p>Téléphone*</p>
+                                <input type="number" name="telephone" placeholder="">
                                 {!! $errors->first('telephone', '<small class="help-block">:message</small>') !!}
                             </div>
-                        </div>  
+                        </div> 
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
+                                <p>Montant de la donation*</p>
+                                <input type="number" name="montant" placeholder="">
+                                {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
+                            </div>
+                        </div> 
 
                     </div>
                 </div>
