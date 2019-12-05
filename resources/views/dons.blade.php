@@ -218,7 +218,7 @@ background-position: center;background-repeat: no-repeat;
 
 <div class="container" style="padding:100px; 
                               background-color: rgb(0,0,0); 
-                              background-color: rgba(0,0,0, 0.4);">
+                              background-color: rgba(0,0,0, 0.4); filter: blur(8px);">
 
         <div class="donate-form-area">
             <div class="section-title center">
