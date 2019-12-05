@@ -212,10 +212,10 @@ include('../resources/views/header.php');
 <!--End Sticky Header-->
 </header>
 
-<section">
-<div  style="background-image:url(/images/dons.jpg);
+<section  style="background-image:url(/images/dons.jpg);
 background-position: center;background-repeat: no-repeat;
-  background-size: cover; filter: blur(8px);"></div>
+  background-size: cover;">
+<div ></div>
 <div class="container" style="padding:100px; 
                              z-index: 2px; ">
 
