@@ -213,7 +213,7 @@ include('../resources/views/header.php');
 </header>
 
 <section style="background-image:url(/images/dons.jpg);background-size:cover;">
-<div class="container" style="margin:100px;">
+<div class="container" style="padding:100px;">
         <div class="donate-form-area">
             <div class="section-title center">
                 <h2>Donation Information</h2>
