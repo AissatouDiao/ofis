@@ -325,7 +325,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Call To Action -->
-    <section class="subscribe-section" style="background-image: url(images/background/4.jpg)">
+    <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
             <div class="row">
                 <div class="title-column col-lg-8">
@@ -361,7 +361,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="/home"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="/home"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">

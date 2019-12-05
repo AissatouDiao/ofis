@@ -5,14 +5,14 @@
 <title>ChariteMax HTML Template</title> 
 
 <!-- Stylesheets -->
-<link href="../../resources/sass/bootstrap.css" rel="stylesheet">
-<link href="../../resources/sass/style.css" rel="stylesheet">
-<link href="../../resources/sass/responsive.css" rel="stylesheet">
+<link href="/sass/bootstrap.css" rel="stylesheet">
+<link href="/sass/style.css" rel="stylesheet">
+<link href="/sass/responsive.css" rel="stylesheet">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -57,11 +57,10 @@
             <div class="top-right">
                 
                 <div class="social-links clearfix">
-                    <a href="#"><span class="fab fa-twitter"></span></a>
-                    <a href="#"><span class="fab fa-facebook"></span></a>
-                    <a href="#"><span class="fab fa-google-plus"></span></a>
-                    <a href="#"><span class="fab fa-youtube"></span></a>
-                    <a href="#"><span class="fab fa-pinterest-p"></span></a>
+                <a href="https://www.facebook.com/ofisdusenegal"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/ofisdusenegal"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ofisdusenegal"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/ofisdusenegal"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 
             </div>
@@ -75,7 +74,7 @@
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -142,7 +141,7 @@
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -282,18 +281,18 @@
     </div>
     
 
-    <script src="../../resources/js/jquery.js"></script>
-<script src="../../resources/js/popover.js"></script>
-<script src="../../resources/js/bootstrap.min.js"></script>
+<script src="/js1/jquery.js"></script>
+<script src="/js1/popover.js"></script>
+<script src="/js1/bootstrap.min.js"></script>
 
-<script src="../../resources/js/wow.js"></script>
-<script src="../../resources/js/owl.js"></script>
-<script src="../../resources/js/validate.js"></script>
-<script src="../../resources/js/mixitup.js"></script>
-<script src="../../resources/js/isotope.js"></script>
-<script src="../../resources/js/appear.js"></script>
-<script src="../../resources/js/jquery.fancybox.js"></script>
+<script src="/js1/wow.js"></script>
+<script src="/js1/owl.js"></script>
+<script src="/js1/validate.js"></script>
+<script src="/js1/mixitup.js"></script>
+<script src="/js1/isotope.js"></script>
+<script src="/js1/appear.js"></script>
+<script src="/js1/jquery.fancybox.js"></script>
 
-<script src="../../resources/js/script.js"></script>
+<script src="/js1/script.js"></script>
 </body>
 </html>

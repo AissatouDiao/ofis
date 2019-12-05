@@ -279,7 +279,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Call To Action -->
-    <section class="subscribe-section" style="background-image: url(images/background/4.jpg)">
+    <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
             <div class="row">
                 <div class="title-column col-lg-8">

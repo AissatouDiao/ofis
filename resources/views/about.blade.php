@@ -519,13 +519,26 @@ include('../resources/views/header.php');
     <!-- Feature section -->
  
 
-    <!-- Parallax section -->
-    <section class="parallax-section" style="background-image: url(/images/blue-heart1.jpg)">
+   <!-- Call To Action -->
+   <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
-            <h1>Nous aidons des familles à vivre dans un meilleur cadre <br> en leur facilitant l'accès aux latrines</h1>
-            <h3>Aider nous à leur venir en aide en faisant un don <span class="border-shape"></span></h3>
+            <div class="row">
+                <div class="title-column col-lg-8">
+                    <h2>S'inscrire à notre Newsletter</h2>
+                    <div class="text">Laisser nous votre email, pour recevoir nos newletters...</div>
+                </div>
+                <div class="subscribe-form col-lg-4">
+                    <form method="post" action="{{ route('newletter')}}">
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Votre email..." required="">
+                            <button type="submit" class="theme-btn"><span class="fa fa-paper-plane"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>                    
         </div>
     </section>
+   
     <footer class="main-footer">
         <div class="container">
         

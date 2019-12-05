@@ -820,7 +820,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Call To Action -->
-    <section class="subscribe-section" style="background-image: url(images/background/4.jpg)">
+    <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
             <div class="row">
                 <div class="title-column col-lg-8">
@@ -829,7 +829,6 @@ include('../resources/views/header.php');
                 </div>
                 <div class="subscribe-form col-lg-4">
                     <form method="post" action="{{ route('newletter')}}">
-                    @csrf
                         <div class="form-group">
                             <input type="email" name="email" value="" placeholder="Votre email..." required="">
                             <button type="submit" class="theme-btn"><span class="fa fa-paper-plane"></span></button>
