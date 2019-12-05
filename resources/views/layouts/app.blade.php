@@ -32,7 +32,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto" style="color:blue;">
                             <li class="nav-item"><a class="nav-link" href="{{ url('home') }}">Accueil</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('projets' )}}">Nos projets</a></li>
                             <li class="nav-item"><a class="nav-link" href="{{ url('blog') }}">Blog</a></li>
