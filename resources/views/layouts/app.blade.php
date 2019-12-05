@@ -33,11 +33,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                    <li class="current" ><a href="{{ url('home') }}">Accueil</a></li>
+                            <li><a href="{{ url('projets' )}}">Nos projets</a></li>
+                            <li><a href="{{ url('blog') }}">Blog</a></li>
+                            <li><a href="{{ url('aboutus') }}">A propos de nous</a></li>
+                            <li><a href="{{ url('contact') }}">Contact</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                   | <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
