@@ -216,8 +216,7 @@ include('../resources/views/header.php');
 background-position: center;background-repeat: no-repeat;
   background-size: cover;">
 <div ></div>
-<div class="container" style="padding:100px; 
-                             z-index: 2px; ">
+<div class="container" style="padding:100px;">
 
         <div class="donate-form-area">
             <div class="section-title center">
