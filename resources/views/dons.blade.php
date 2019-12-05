@@ -212,7 +212,7 @@ include('../resources/views/header.php');
 <!--End Sticky Header-->
 </header>
 
-<section style="background-image:url(/images/dons.jpg);background-size:cover;">
+<section style="background-image:url(/images/dons.jpg);background-size:cover; filter: blur(8px);">
 <div class="container" style="padding:100px;">
         <div class="donate-form-area">
             <div class="section-title center">
