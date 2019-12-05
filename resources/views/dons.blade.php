@@ -168,7 +168,7 @@ include('../resources/views/header.php');
                             </ul>
                         </div>
                     </div>
-                    <div class="link-btn"><a href="{{url('donspage')}}" class="theme-btn btn-style-two donate-box-btn">Faire un don</a></div>
+                   
                 </div>
                 
             </div>
@@ -211,6 +211,8 @@ include('../resources/views/header.php');
 </div>
 <!--End Sticky Header-->
 </header>
+
+<section>
 <div class="container">
         <div class="donate-form-area">
             <div class="section-title center">
@@ -319,7 +321,7 @@ include('../resources/views/header.php');
                 {!! Form::close() !!}
         </div>
     </div>
-    
+    </section>
 
     
     <!-- Call To Action -->
@@ -405,7 +407,7 @@ include('../resources/views/header.php');
                                     <div class="widget-content">
                                         <ul class="contact-info-list">
                                             <li><i class="fas fa-map-marker-alt"></i>Dakar, Senegal</li>
-                                            <li><i class="fas fa-phone"></i>Support: +(221) *** ** **</li>
+                                            <li><i class="fas fa-phone"></i>Support: (+221) 77 436 66 84 </li>
                                             <li><i class="fas fa-envelope-open"></i>Email: ofissenegal@gmail.com</li>
                                         </ul>
                                     </div>       
