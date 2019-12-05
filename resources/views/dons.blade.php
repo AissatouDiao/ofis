@@ -212,8 +212,8 @@ include('../resources/views/header.php');
 <!--End Sticky Header-->
 </header>
 
-<section style="background-image:url(/images/dons.jpg);backgrounfd-size:cover;">
-<div class="container" style="margin:20px;">
+<section style="background-image:url(/images/dons.jpg);background-size:cover;">
+<div class="container" style="margin:100px;">
         <div class="donate-form-area">
             <div class="section-title center">
                 <h2>Donation Information</h2>
