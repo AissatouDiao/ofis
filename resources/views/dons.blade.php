@@ -217,7 +217,7 @@ background-position: center;background-repeat: no-repeat;
   background-size: cover; filter: blur(8px);">
 
 <div class="container" style="padding:100px; 
-                             filter: blur(0px); ">
+                             z-index: 2px; ">
 
         <div class="donate-form-area">
             <div class="section-title center">
