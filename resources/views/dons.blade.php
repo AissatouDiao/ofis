@@ -220,13 +220,14 @@ background-position: center;background-repeat: no-repeat;
 
         <div class="donate-form-area">
             <div class="section-title center">
-                <h2>Donation Information</h2>
+                <h2>Proposition de don</h2>
             </div>
 
-            <h4>Faire une proposition de don</h4>
+            <h4>Faites nous une proposition de don, nous vous contacterons directement</h4>
             {!! Form::open(['url' => './dons']) !!}
            
             @csrf
+            
             <script>
             var montant=document.getElementById('donate-amount');
             </script>
