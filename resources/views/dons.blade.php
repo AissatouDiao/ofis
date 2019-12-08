@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="utf-8">
-<title>ChariteMax HTML Template</title> 
+<title>OFIS assainissement</title> 
 
 <!-- Stylesheets -->
 <?php
