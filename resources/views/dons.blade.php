@@ -223,11 +223,11 @@ background-position: center;background-repeat: no-repeat;
                 <h2>Proposition de don</h2>
             </div>
 
-            <h4>Faites nous une proposition de don, nous vous contacterons directement</h4>
+            <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
             {!! Form::open(['url' => './dons']) !!}
            
             @csrf
-            
+
             <script>
             var montant=document.getElementById('donate-amount');
             </script>

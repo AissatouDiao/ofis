@@ -8,7 +8,7 @@
                 <div class="card-header" >{{ __('Connexion') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}" style="background: url(../resources/images/b.jpg);background-repeat:no-repeat;background-size: cover;" >
+                    <form method="POST" action="{{ route('login') }}" style="background: url(/images/b.jpg);background-repeat:no-repeat;background-size: cover;" >
                         @csrf
 
                         <div class="form-group row">
