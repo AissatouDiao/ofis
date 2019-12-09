@@ -4,8 +4,8 @@
 <head>
 
 <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./../resources/assets-admin/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./../resources/assets-admin/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets-admin/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/assets-admin/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
   OFIS admin
@@ -15,8 +15,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- CSS Files -->
-  <link href="../../resources/assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../../resources/assets/css/now-ui-dashboard.css" rel="stylesheet" />
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/css/now-ui-dashboard.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -319,19 +319,19 @@
       </footer>
     </div>
   </div>
-  <script src="./../resources/js/jquery.js"></script>
-<script src="./../resources/js/popover.js"></script>
-<script src="./../resources/js/bootstrap.min.js"></script>
+  <script src="/js/jquery.js"></script>
+<script src="/js/popover.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
-<script src="./../resources/js/wow.js"></script>
-<script src="./../resources/js/owl.js"></script>
-<script src="./../resources/js/validate.js"></script>
-<script src="./../resources/js/mixitup.js"></script>
-<script src="./../resources/js/isotope.js"></script>
-<script src="./../resources/js/appear.js"></script>
-<script src="./../resources/js/jquery.fancybox.js"></script>
+<script src="/js/wow.js"></script>
+<script src="/js/owl.js"></script>
+<script src="/js/validate.js"></script>
+<script src="./js/mixitup.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/appear.js"></script>
+<script src="/js/jquery.fancybox.js"></script>
 
-<script src="./../resources/js/script.js"></script>
+<script src="/js/script.js"></script>
 
 </body>
 
