@@ -20,6 +20,7 @@ class ProjetdonsController extends Controller
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
         $dons->montant=$request->montant;
+        $dons->is_ano=$request->is_ano;
         $dons->save();
 
         return redirect()->back()->with('successMsg','Votre requête a été prise en compte');

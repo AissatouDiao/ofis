@@ -237,42 +237,16 @@
 
                 <ul class="payment-option">
                     <li>
-                        <h4>Choisir son mode de payment</h4>
+                        <h4>Choisir de rester anonyme</h4>
                     </li>
                     <li>
                         <div class="checkbox">
                             <label>
-                                <input name="pay-us" type="checkbox">
-                                <span>Paypal</span>
+                                <input name="is_ano" type="checkbox">
+                                <span>Anonymat</span>
                             </label>
                         </div>
                     </li>
-                    <li>
-                       <div class="checkbox">
-                            <label>
-                                <input name="pay-us" type="checkbox">
-                                <span>Offline Donation</span>
-                            </label>
-                        </div> 
-                    </li>
-                    <li>
-                        <div class="checkbox">
-                            <label>
-                                <input name="pay-us" type="checkbox">
-                                <span>Credit Card</span>
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="checkbox">
-                            <label>
-                                <input name="pay-us" type="checkbox">
-                                <span>Debit Card</span>
-                            </label>
-                        </div>
-                    </li>
-                </ul>
-
                 <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
                     
             
