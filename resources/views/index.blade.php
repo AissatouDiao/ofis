@@ -416,7 +416,7 @@ include('../resources/views/header.php');
                         </div>
                     </div>
                 </div>
-                </div>
+                
                 @endforeach
               
             </div>
