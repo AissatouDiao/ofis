@@ -23,7 +23,7 @@ class ProjetsController extends Controller
         $detail=$request->input('description');
  
         $dom = new \domdocument();
-        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD  | LIBXML_HTML_NOIMPLIED  |  LIBXML_NOERROR |  LIBXML_NOWARNING );
         $images = $dom->getelementsbytagname('img');
  
         //loop over img elements, decode their base64 src and save them to public folder,
