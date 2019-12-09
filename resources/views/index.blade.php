@@ -321,16 +321,10 @@ include('../resources/views/header.php');
         <div class="container mt-2">
             <div class="row">
                 <div class="col-lg-5 image-block-one">
-               
                   <div class="row m-0 d-flex justify-content-center">
-                <embed src="/images/video.mp4" autostart="false" height="400px" width="100%" />
+                 <embed src="/images/video.mp4" autostart="false" height="400px" width="100%" />
+                  </div>
                </div>
-               </div>
-               <div>
-
-                   
-              
-                </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="pl-lg-5">
                         <!-- sec-title -->
@@ -386,9 +380,7 @@ include('../resources/views/header.php');
                         <div class="lower-content">
                             <h5>Toute aide est la bienvenue</h5>
                             <a href="{{route('lireleprojet', [$projet->id])}}" ><h4>{{$projet->titre}}</h4> </a>  
-                            <div class="text">{!!Str::words($projet->description, 70)!!}...</div><br>
-
-
+                            <div class="text">{!!Str::words($projet->description, 50)!!}...</div><br>
                             <!--Progress Levels-->
                             <div class="progress-levels" > 
                                         <?php
