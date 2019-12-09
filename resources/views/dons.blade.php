@@ -292,7 +292,7 @@ background-position: center;background-repeat: no-repeat;
                     <li>
                         <div class="checkbox">
                             <label>
-                                <input name="anonyme" type="checkbox">
+                                <input name="is_ano" type="checkbox">
                                 <span>Anonymat</span>
                             </label>
                         </div>

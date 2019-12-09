@@ -29,6 +29,7 @@ class DonsRequest extends FormRequest
             'adresse' => 'required|max:250',
             'telephone'=>'required|min:7|max:20',
             'montant'=>'required|integer',
+            'is_ano'=>'bolean',
         ];
     }
 }
