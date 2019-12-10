@@ -27,7 +27,7 @@ class DonsRequest extends FormRequest
             'nom' => 'required|min:5|max:20|alpha',
 			'email' => 'required|email',
             'adresse' => 'required|max:250',
-            'telephone'=>'required|min:7|max:20',
+            'telephone'=>'required|numeric|regex:/[0-9]{7,15}/',    
             'montant'=>'required|integer',
             'is_ano'=>'bolean',
         ];

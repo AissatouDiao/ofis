@@ -270,7 +270,7 @@ background-position: center;background-repeat: no-repeat;
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('telephone') ? 'has-error' : '' !!}">
                                 <p>Téléphone*</p>
-                                <input type="number" name="telephone" placeholder="">
+                                <input type="text" name="telephone" placeholder="">
                                 {!! $errors->first('telephone', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div> 
