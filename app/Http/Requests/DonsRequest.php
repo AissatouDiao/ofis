@@ -29,7 +29,7 @@ class DonsRequest extends FormRequest
             'adresse' => 'required|max:250',
             'telephone'=>'required|numeric|regex:/[0-9]{7,15}/',    
             'montant'=>'required|integer',
-            'is_ano'=>'bolean',
+            'is_ano'=>'accepted',
         ];
     }
 }
