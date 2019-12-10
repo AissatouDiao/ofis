@@ -415,9 +415,8 @@ include('../resources/views/header.php');
                
            </div>
         
-           
+           @endforeach
         </div> 
-        @endforeach
         <h5><div class="text-center"><a href="{{ url('projets') }}"> <button type="button" class="btn btn-info btn-block">Voir tous les projets</button></a></div></h5>
         
     </section>
