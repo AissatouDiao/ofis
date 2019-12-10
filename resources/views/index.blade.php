@@ -112,10 +112,10 @@ include('../resources/views/header.php');
         </div>
             
     </div>
-</div>
+   </div>
 
-<!--Header-Upper-->
-<div class="header-upper ">
+ <!--Header-Upper-->
+ <div class="header-upper ">
     <div class="container-fluid clearfix">
             
     <div class="logo float-left">
@@ -177,11 +177,11 @@ include('../resources/views/header.php');
         </div>
             
     </div>
-</div>
-<!--End Header Upper-->
+ </div>
+ <!--End Header Upper-->
 
-<!--Sticky Header-->
-<div class="sticky-header">
+ <!--Sticky Header-->
+  <div class="sticky-header">
     <div class="container">
         <div class="clearfix">
             <!--Logo-->
@@ -880,14 +880,13 @@ include('../resources/views/header.php');
        
         
     </footer>
-
-
     
+</div>
 
-<!-- Scroll Top Button -->
-<button class="scroll-top scroll-to-target" data-target="html">
+ <!-- Scroll Top Button -->
+ <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-angle-up"></span>
-</button>
+ </button>
     
 
 <!-- jequery plugins -->
