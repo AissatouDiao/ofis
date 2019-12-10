@@ -366,8 +366,8 @@ include('../resources/views/header.php');
                 <div class="text"></div>
             </div>
             <div class="row clearfix">
+            @foreach($projets as $projet)
                 <!--Cause Block-->
-                @foreach($projets as $projet)
                    <div class="cause-block col-lg-4 col-md-6 ">
                        <div class="inner-box">
                             <figure class="image">
@@ -411,6 +411,7 @@ include('../resources/views/header.php');
                            </div>
                        </div>
                    </div>
+                </div>
                 @endforeach
            </div>
         </div>
