@@ -368,7 +368,7 @@ include('../resources/views/header.php');
             <div class="row clearfix">
                 <!--Cause Block-->
                 @foreach($projets as $projet)
-                   <div class="cause-block col-lg-4 col-md-6 ">
+                   <div class="cause-block col-lg-3 col-md-6 ">
                        <div class="inner-box">
                             <figure class="image">
                                 <img src="./{{$projet->image}}" style="width:360px;height:280px" alt="">
