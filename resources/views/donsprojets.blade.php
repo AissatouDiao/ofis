@@ -196,7 +196,6 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
                                 <p>Montant</p>
-                                
                                 <input type="text" name="montant" placeholder="">
                                 {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
                             </div>
@@ -205,7 +204,6 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
                                 <p>Your Name*</p>
-                                
                                 <input type="text" name="nom" placeholder="">
                                 {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
                             </div>
@@ -213,7 +211,6 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
                                 <p>Prenom*</p>
-                                
                                 <input type="text" name="prenom" placeholder="">
                                 {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
                             </div>

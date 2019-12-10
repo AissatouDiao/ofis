@@ -23,7 +23,7 @@ class ProjetdonsController extends Controller
         $dons->montant=$request->montant;
         $dons->is_ano=$request->is_ano;
         $dons->save();
-
+        
         return redirect()->back()->with('successMsg','Votre requête a été prise en compte');
         
     }
@@ -34,6 +34,7 @@ class ProjetdonsController extends Controller
     
         $dons->projet_id=$request->id;
         $dons->nom=$request->nom;
+        $dons->prenom=$request->prenom;
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
