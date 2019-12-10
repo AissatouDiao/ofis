@@ -361,7 +361,7 @@ include('../resources/views/header.php');
         <div class="container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <div class="icon-box"><img src="../resources/images/fusee.png" alt="" ></div>
+                <div class="icon-box"><img src="images/fusee.png" alt="" ></div>
                 <h1>Projets <span>en cours</span></h1>
                 <div class="text"></div>
             </div>
@@ -411,17 +411,14 @@ include('../resources/views/header.php');
                            </div>
                        </div>
                    </div>
-                   </div>
-                  
                 @endforeach
-                </div>
-            </div>
+           </div>
         </div>
             
-            <h5><div class="text-center" ><a href="{{ url('projets') }}"> <button type="button" class="btn btn-info btn-block">Voir tous les projets</button> </a> </div> </h5>
+        <h5><div class="text-center"><a href="{{ url('projets') }}"> <button type="button" class="btn btn-info btn-block">Voir tous les projets</button></a></div></h5>
         
     </section>
-
+  <section>
     <!-- Fact Counter -->
     <div class="fact-counter sp-two" style="background-image: url(/images/blue-ball.jpg)">
         <div class="container">
@@ -482,7 +479,7 @@ include('../resources/views/header.php');
             </div>
         </div>
     </div>
-
+    </section>
     <!-- Mission Section -->
     <section class="mission-section sp-one" style="background-image: url(/images/b.jpg">
         <div class="container">
