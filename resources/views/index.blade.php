@@ -34,11 +34,11 @@ include('../resources/views/header.php');
     <div class="preloader"></div> 
     <!-- main header -->
    
-<header class="main-header">
+ <header class="main-header">
 
-<!-- header top -->
-<!-- header top -->
-<div class="header-top dark">
+ <!-- header top -->
+ <!-- header top -->
+  <div class="header-top dark">
     <div class="container-fluid">
         <div class="outer-box">
             <!--Top Left-->
@@ -209,9 +209,9 @@ include('../resources/views/header.php');
             
         
     </div>
-</div>
-<!--End Sticky Header-->
-</header>
+  </div>
+    <!--End Sticky Header-->
+   </header>
 
 
 
@@ -368,7 +368,7 @@ include('../resources/views/header.php');
             <div class="row clearfix">
                 <!--Cause Block-->
                 @foreach($projets as $projet)
-                   <div class="cause-block col-lg-3 col-md-6 ">
+                   <div class="cause-block col-lg-4 col-md-6 ">
                        <div class="inner-box">
                             <figure class="image">
                                 <img src="./{{$projet->image}}" style="width:360px;height:280px" alt="">
@@ -418,68 +418,71 @@ include('../resources/views/header.php');
         <h5><div class="text-center"><a href="{{ url('projets') }}"> <button type="button" class="btn btn-info btn-block">Voir tous les projets</button></a></div></h5>
         
     </section>
-  <section>
-    <!-- Fact Counter -->
-    <div class="fact-counter sp-two" style="background-image: url(/images/blue-ball.jpg)">
-        <div class="container">
-            <div class="row">
 
-                <!--Column-->
-                <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="900ms">
-                    <div class="item">
-                        <div class="inner-box">
-                            <div class="icon-box"><span class="flaticon-donation-1"></span></div>
-                            <div class="count-outer">
-                                <span class="count-text" data-speed="3000" data-stop="0">0</span>
-                                <p>donations</p>
-                            </div>
-                        </div>                                                      
-                    </div>
-                </article>
+       
+    <section>
+        <!-- Fact Counter -->
+        <div class="fact-counter sp-two" style="background-image: url(/images/blue-ball.jpg)">
+            <div class="container">
+                <div class="row">
 
-                <!--Column-->
-                <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="300ms">
-                    <div class="item">
-                        <div class="inner-box">
-                            <div class="icon-box"><span class="flaticon-balloon"></span></div>
-                            <div class="count-outer">
-                                <span class="count-text" data-speed="3000" data-stop="0">0</span>
-                                <p>Donateurs</p>
-                            </div>
-                        </div>                                                      
-                    </div>
-                </article>
+                    <!--Column-->
+                    <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="900ms">
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="flaticon-donation-1"></span></div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="0">0</span>
+                                    <p>donations</p>
+                                </div>
+                            </div>                                                      
+                        </div>
+                    </article>
+
+                    <!--Column-->
+                    <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="300ms">
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="flaticon-balloon"></span></div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="0">0</span>
+                                    <p>Donateurs</p>
+                                </div>
+                            </div>                                                      
+                        </div>
+                    </article>
+                        
+                    <!--Column-->
+                    <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="600ms">
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="flaticon-shirt"></span></div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="0">0</span>
+                                    <p>Volontaires</p>
+                                </div>
+                            </div>                                                      
+                        </div>
+                    </article>
                     
-                <!--Column-->
-                <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="600ms">
-                    <div class="item">
-                        <div class="inner-box">
-                            <div class="icon-box"><span class="flaticon-shirt"></span></div>
-                            <div class="count-outer">
-                                <span class="count-text" data-speed="3000" data-stop="0">0</span>
-                                <p>Volontaires</p>
-                            </div>
-                        </div>                                                      
-                    </div>
-                </article>
-                
 
-                <!--Column-->
-                <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="900ms">
-                    <div class="item">
-                        <div class="inner-box">
-                            <div class="icon-box"><span class="flaticon-ecology"></span></div>
-                            <div class="count-outer">
-                                <span class="count-text" data-speed="3000" data-stop="0">0</span>
-                                <p>Projets finis</p>
-                            </div>
-                        </div>                                                      
-                    </div>
-                </article>
+                    <!--Column-->
+                    <article class="column counter-column col-xl-3 col-lg-6 col-md-6 wow fadeIn" data-wow-duration="900ms">
+                        <div class="item">
+                            <div class="inner-box">
+                                <div class="icon-box"><span class="flaticon-ecology"></span></div>
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="3000" data-stop="0">0</span>
+                                    <p>Projets finis</p>
+                                </div>
+                            </div>                                                      
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
-    </div>
     </section>
+
     <!-- Mission Section -->
     <section class="mission-section sp-one" style="background-image: url(/images/b.jpg">
         <div class="container">
