@@ -26,6 +26,7 @@ class DonsprojetsRequest extends FormRequest
     {
         return [
             'nom' => 'required|min:5|max:20|alpha',
+            'prenom' => 'required|max:30|alpha',
 			'email' => 'required|email',
             'adresse' => 'required|max:250',
             'telephone'=>'required|min:7|max:20',

@@ -15,6 +15,7 @@ class DonsController extends Controller
     public function store(DonsRequest $request){
         $dons=new Dons;
         $dons->nom=$request->nom;
+        $dons->prenom=$request->prenom;
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;

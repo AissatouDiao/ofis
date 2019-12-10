@@ -16,6 +16,7 @@ class ProjetdonsController extends Controller
     
         $dons->projet_id=$request->id;
         $dons->nom=$request->nom;
+        $dons->prenom=$request->prenom;
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
