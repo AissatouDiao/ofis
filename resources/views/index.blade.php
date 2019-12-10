@@ -366,62 +366,52 @@ include('../resources/views/header.php');
                 <div class="text"></div>
             </div>
             <div class="row clearfix">
-               
-                @foreach($projets as $projet)
-               
                 <!--Cause Block-->
-                <div class="cause-block col-lg-4 col-md-6 ">
-                    <div class="inner-box">
-                          <figure class="image">
-                            <img src="./{{$projet->image}}" style="width:360px;height:280px" alt="">
-                            <div class="overlay">
-                            </div>
-                           </figure>
-                        <div class="lower-content">
-                            <h5>Toute aide est la bienvenue</h5>
-                            <a href="{{route('lireleprojet', [$projet->id])}}" ><h4>{{$projet->titre}}</h4> </a>  
-                            <div class="text">{!!Str::words($projet->description, 70)!!}...</div><br>
+                @foreach($projets as $projet)
+                   <div class="cause-block col-lg-4 col-md-6 ">
+                       <div class="inner-box">
+                            <figure class="image">
+                                <img src="./{{$projet->image}}" style="width:360px;height:280px" alt="">
+                                <div class="overlay">
+                                </div>
+                            </figure>
+                           <div class="lower-content">
+                                <h5>Toute aide est la bienvenue</h5>
+                                <a href="{{route('lireleprojet', [$projet->id])}}" ><h4>{{$projet->titre}}</h4> </a>  
+                                <div class="text">{!!Str::words($projet->description, 70)!!}...</div><br>
+                        
 
-
-                            <!--Progress Levels-->
-                            <div class="progress-levels" > 
-                                        <?php
-                                        $MT=$projet->montant_goal;
-                                        $MR=$projet->donsprojets->sum('montant');
-                                        $pourcentage=($MR*100)/$MT;
-                                        ?>
-                                <!--Skill Box-->
-                                <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms" >
-                                    <div class="inner">
-                                        <div class="bar" >
-                                            <div class="bar-innner"><div class="bar-fill" style="padding:5px;" data-percent="{{round($pourcentage)}}"><div class="percent"></div></div></div>
+                                <!--Progress Levels-->
+                                <div class="progress-levels" > 
+                                            <?php
+                                            $MT=$projet->montant_goal;
+                                            $MR=$projet->donsprojets->sum('montant');
+                                            $pourcentage=($MR*100)/$MT;
+                                            ?>
+                                    <!--Skill Box-->
+                                    <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms" >
+                                        <div class="inner">
+                                            <div class="bar" >
+                                                <div class="bar-innner"><div class="bar-fill" style="padding:5px;" data-percent="{{round($pourcentage)}}"><div class="percent"></div></div></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                            </div>
 
-                            <div class="donate clearfix">
+                                <div class="donate clearfix">
+                                    <div class="float-left">
+                                        <span>{{$projet->donsprojets->sum('montant')}}</span>  
+                                    </div>
+                                    <div class="float-right">
+                                        {{$projet->montant_goal}} FCFA
+                                    </div>
+                                </div>  
                             
-                                <div class="float-left">
-                                    <span>{{$projet->donsprojets->sum('montant')}} 
-                                    </span>
-                                    
-                                </div>
-                             
-                                <div class="float-right">
-                                    {{$projet->montant_goal}} FCFA
-                                </div>
-                            </div>  
-                            
-                            <div class="link-btn"><a href="./donsurprojet/{{$projet->id}}" class="theme-btn btn-style-four donate-box-btn">Faire un don</a></div>
-                        </div>
-                    </div>
-                </div>
+                                <div class="link-btn"><a href="./donsurprojet/{{$projet->id}}" class="theme-btn btn-style-four donate-box-btn">Faire un don</a></div>
+                           </div>
+                       </div>
+                   </div>
                 @endforeach
-                </div>
-               
-              
             </div>
             <h5><div class="text-center" ><a href="{{ url('projets') }}"> <button type="button" class="btn btn-info btn-block">Voir tous les projets</button> </a> </div> </h5>
         </div>
