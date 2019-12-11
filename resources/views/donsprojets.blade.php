@@ -5,14 +5,14 @@
 <title>ChariteMax HTML Template</title> 
 
 <!-- Stylesheets -->
-<link href="/sass/bootstrap.css" rel="stylesheet">
-<link href="/sass/style.css" rel="stylesheet">
-<link href="/sass/responsive.css" rel="stylesheet">
-  <!-- CSRF Token -->
+<?php
+include('../resources/views/header.php');
+?>
+
   <meta name="csrf-token" content="{{ csrf_token() }}">
 <!-- Fav Icons -->
-<link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -57,10 +57,11 @@
             <div class="top-right">
                 
                 <div class="social-links clearfix">
-                <a href="https://www.facebook.com/ofisdusenegal"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.twitter.com/ofisdusenegal"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/ofisdusenegal"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/ofisdusenegal"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-facebook"></span></a>
+                    <a href="#"><span class="fab fa-google-plus"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                    <a href="#"><span class="fab fa-pinterest-p"></span></a>
                 </div>
                 
             </div>
@@ -74,7 +75,7 @@
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -141,7 +142,7 @@
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -191,11 +192,12 @@
 
                         
 
-                        
+                        <input type="hidden" name="projet_id" value="{{$nombre}}">
                         
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
                                 <p>Montant</p>
+                                
                                 <input type="text" name="montant" placeholder="">
                                 {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
                             </div>
@@ -204,15 +206,9 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
                                 <p>Your Name*</p>
+                                
                                 <input type="text" name="nom" placeholder="">
                                 {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-                                <p>Prenom*</p>
-                                <input type="text" name="prenom" placeholder="">
-                                {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -240,38 +236,17 @@
                     </div>
                 </div>
 
-                <ul class="payment-option">
-                    <li>
-                        <h4>Choisir de rester anonyme</h4>
-                    </li>
-                    <li>
-                        <div class="checkbox">
-                            <label>
-                                <input name="is_ano" type="checkbox">
-                                <span>Anonymat</span>
-                            </label>
-                        </div>
-                    </li>
+
                 <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
                     
             
                 {!! Form::close() !!}
         </div>
-    </div>
+         </div>
     
 
-<script src="/js1/jquery.js"></script>
-<script src="/js1/popover.js"></script>
-<script src="/js1/bootstrap.min.js"></script>
-
-<script src="/js1/wow.js"></script>
-<script src="/js1/owl.js"></script>
-<script src="/js1/validate.js"></script>
-<script src="/js1/mixitup.js"></script>
-<script src="/js1/isotope.js"></script>
-<script src="/js1/appear.js"></script>
-<script src="/js1/jquery.fancybox.js"></script>
-
-<script src="/js1/script.js"></script>
+         <?php
+include('../resources/views/footer.php');
+?>
 </body>
 </html>
