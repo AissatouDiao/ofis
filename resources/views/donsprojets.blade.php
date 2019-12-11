@@ -191,7 +191,7 @@
 
                         
 
-                        <input type="hidden" name="projet_id" value="{{$nombre}}">
+                        
                         
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
