@@ -224,7 +224,7 @@ background-position: center;background-repeat: no-repeat;
             </div>
 
             <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
-            {!! Form::open(['url' => './dons']) !!}
+            <form action="{{route('donsprojetproposition', [$id])}}" method="post" enctype="multipart/form-data">
            
             @csrf
 
@@ -233,10 +233,17 @@ background-position: center;background-repeat: no-repeat;
             </script>
         
 
-                <h3>Informations sur le don</h3>
+                 <?php var_dump($id);
+                 $nombre=(int)$id;
+                 ?>
+                <h3>Informations du donneur</h3>
 
                 <div class="form-bg">
                     <div class="row clearfix">
+
+                        
+
+                        <input type="hidden" name="projet_id" value="{{$nombre}}">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
                                 <p>Nom*</p>
@@ -302,7 +309,7 @@ background-position: center;background-repeat: no-repeat;
                 <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
                     
             
-                {!! Form::close() !!}
+                </form>
         </div>
     </div>
     </section>
