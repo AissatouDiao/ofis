@@ -270,7 +270,7 @@ include('../resources/views/header.php');
                     </div>
                 </div>
              </div>
-                @endforeach
+                @endforeach @endforeach
            </div>
             <ul class="page_pagination_two center mt-40">
                 <li>{!! $projets->links() !!}</li>          
