@@ -233,7 +233,7 @@ background-position: center;background-repeat: no-repeat;
             </script>
         
 
-                 <?php var_dump($id);
+                <?php var_dump($id);
                  $nombre=(int)$id;
                  ?>
                 <h3>Informations du donneur</h3>

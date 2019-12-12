@@ -10,8 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/donspage','DonsController@der');
-Route::post('/dons','DonsController@store');
 
 
 Route::get('/commentairemm', function () {
@@ -38,6 +36,9 @@ Route::get('/contact', function () {
 });
 
 Auth::routes();
+Route::get('/donspage','DonsController@der');
+Route::post('/dons','DonsController@store')->name('dons');
+
 Route::get('/contact','ContactController@afficher' );
 Route::post('/contact','ContactController@postForm' );
 
@@ -64,6 +65,7 @@ Route::post('/reponseprojet/{comments}', 'ReplyprojetController@reply')->name('r
 
 Route::get('/myp', 'MyprojetController@afficher');
 Route::post('/myp', 'MyprojetController@enregistrerprojet')->name('projetuser');
+
 
 Route::group(['middleware'=>['auth','admin']],function(){
 

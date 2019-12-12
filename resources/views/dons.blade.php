@@ -224,7 +224,7 @@ background-position: center;background-repeat: no-repeat;
             </div>
 
             <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
-            {!! Form::open(['url' => './dons']) !!}
+            <form action="{{route('dons'}}" method="post" enctype="multipart/form-data">
            
             @csrf
 
@@ -302,7 +302,7 @@ background-position: center;background-repeat: no-repeat;
                 <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
                     
             
-                {!! Form::close() !!}
+                </form>
         </div>
     </div>
     </section>
