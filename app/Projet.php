@@ -13,6 +13,6 @@ class Projet extends Model
     }
 
     public function comments(){
-        return $this->hasMany('App\Commentprojet');
+        return $this->hasMany('App\Comment');
     }
 }
