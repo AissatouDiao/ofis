@@ -12,7 +12,7 @@ class ReplyprojetController extends Controller
     public function reply(ReplyprojetRequest $request,Commentprojet $comments){
        
     
-        $reponses= new Rreply2;
+        $reponses= new reply2;
     
         $reponses->comment_id=$comments->id;
         $reponses->nom=$request->nom;
