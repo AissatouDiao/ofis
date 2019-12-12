@@ -23,7 +23,7 @@ class DonsController extends Controller
         $dons->is_ano=$request->is_ano;
 
         $dons->save();
-       
+        return redirect()->back()->with('successMsg','Votre requête a été prise en compte');
     
         
     }

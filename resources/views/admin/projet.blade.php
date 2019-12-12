@@ -112,7 +112,7 @@ include('../resources/views/admin/nav.php');
               </div>
               <div class="card-body">
               @if(!empty($successMsg))
-            <div class="alert alert-success"> {{ $successMsg }}</div>
+            <div class="alert alert-info"> {{ $successMsg }}</div>
             @endif
           
             <form action="{{ route('projetadmin') }}" method="POST" enctype="multipart/form-data">
