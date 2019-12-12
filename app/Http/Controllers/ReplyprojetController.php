@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ReplyprojetRequest;
-use App\Replyprojet;
+use App\reply2;
 use App\Commentprojet; 
 
 class ReplyprojetController extends Controller
@@ -12,7 +12,7 @@ class ReplyprojetController extends Controller
     public function reply(ReplyprojetRequest $request,Commentprojet $comments){
        
     
-        $reponses= new Replyprojet;
+        $reponses= new Rreply2;
     
         $reponses->comment_id=$comments->id;
         $reponses->nom=$request->nom;

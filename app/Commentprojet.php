@@ -12,6 +12,6 @@ class Commentprojet extends Model
     }
 
     public function replies(){
-        return $this->hasMany('App\Reply');
+        return $this->hasMany('App\reply2');
     }
 }

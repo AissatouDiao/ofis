@@ -297,7 +297,7 @@ jQuery(document).ready(function() {
   });
 });
 </script>
-                    <!--Comments Area-->
+                    <!--Comments Area--> 
                     <div class="comments-area">
                         <div class="group-title">
                             <h2>Comments ({{$articles->comments->count()}})</h2>
