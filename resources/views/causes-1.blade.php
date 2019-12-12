@@ -124,7 +124,7 @@ include('../resources/views/header.php');
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>c
                         </button>
                     </div>
                     
@@ -238,7 +238,7 @@ include('../resources/views/header.php');
                             <h4><a href="{{route('lireleprojet', [$projet->id])}}">{{$projet->titre}}</a></h4>
                             <div class="text">{!!Str::words($projet->description, 50)!!}...</div>
 
-                            <?php
+                                   <?php
                                         $MT=$projet->montant_goal;
                                         $MR=$projet->donsprojets->sum('montant');
                                         $pourcentage=($MR*100)/$MT;
@@ -279,7 +279,7 @@ include('../resources/views/header.php');
     </section>
 
     <!-- Call To Action -->
-    <section class="subscribe-section" style="background-image: url(images/background/4.jpg)">
+    <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
         <div class="container">
             <div class="row">
                 <div class="title-column col-lg-8">
@@ -314,7 +314,7 @@ include('../resources/views/header.php');
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <figure>
-                                            <a href="index.html"><img src="../resources/images/petit-logo.png" alt=""></a>
+                                            <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
                                         </figure>
                                     </div>
                                     <div class="widget-content">
