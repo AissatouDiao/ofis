@@ -225,7 +225,7 @@ background-position: center;background-repeat: no-repeat;
 
             <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
             @if(!empty($successMsg))
-            <div class="alert alert-info"> {{ $successMsg }}</div>
+            <div class="alert alert-info"> {{$successMsg}}</div>
             @endif
             <form action="{{route('dons')}}" method="post" enctype="multipart/form-data">
            
