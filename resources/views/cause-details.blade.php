@@ -349,13 +349,7 @@
                                                 </div>
                                         </div> 
                                     </div>
-                                    @foreach ($commentaire->replies as $reply)
-                                        <div class="comment-inner clearfix" style="padding:30px;">
-                                        <div class="comment-info clearfix"><strong>{{$reply->nom}}. </strong></div>
-                                        <div class="text">{{$reply->reply}}</div>
-                                        <div class="comment-time">{{$reply->created_at->diffForHumans()}} </div>
-                                        </div>
-                                     @endforeach
+                                 
                                 </div>
                             </div>
                         </div>
