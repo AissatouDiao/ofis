@@ -60,7 +60,7 @@ Route::delete('/supprimer/{id}', 'CommentController@delete')->name('supprimer');
 Route::post('/reponse/{comments}', 'ReplyController@reply')->name('reponse');
 
 Route::post('/commentaireprojet/{projets}', 'CommentprojetController@comment')->name('commentaireprojet');
-Route::delete('/supprimer/{id}', 'CommentprojetprojetController@delete')->name('supprimer');
+Route::delete('/supprimer/{id}', 'CommentprojetController@delete')->name('supprimer');
 Route::post('/reponseprojet/{comments}', 'ReplyprojetController@reply')->name('reponseprojet');
 
 Route::get('/myp', 'MyprojetController@afficher');

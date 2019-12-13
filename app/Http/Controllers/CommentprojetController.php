@@ -19,7 +19,7 @@ class CommentprojetController extends Controller
         $commentaires->email=$request->email;
         $commentaires->commentaire=$request->commentaire;
         $commentaires->save();
-    
+     
         return redirect()->back();
     }
 

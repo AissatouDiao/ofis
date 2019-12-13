@@ -319,7 +319,7 @@
                                         <div class='content'>
                                             <div class="dropdate" style="cursor:pointer;">reply</div>
                                                     <div class="cdropdate defhide">
-                                                        <form method="post" action="{{route('reponseprojet', [$commentaire->id])}}">
+                                                        <form method="post" action="{{route('reponse', [$commentaire->id])}}">
                                                         @csrf
                                                         @method('post')
                                                             <div class="row clearfix">

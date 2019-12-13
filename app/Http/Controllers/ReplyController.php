@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ReplyRequest;
 use App\Reply;
 use App\Comment; 
-
+ 
 class ReplyController extends Controller
 {
     public function reply(ReplyRequest $request,Comment $comments){
