@@ -323,7 +323,7 @@
                                                         @csrf
                                                         @method('post')
                                                             <div class="row clearfix">
-                                                                <input type="hidden" name="comment_id" value="$commentair0d">
+                                                                <input type="hidden" name="comment_id" value="$commentaire->id">
                                                                 <div class="column col-md-6 col-sm-6">
                                                                     <div class="form-group">
                                                                         <input type="text" name="nom" placeholder="Your Name" required="">

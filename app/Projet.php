@@ -12,5 +12,7 @@ class Projet extends Model
         return $this->hasMany('App\Donsprojet');
     }
 
-  
+    public function comments(){
+        return $this->hasMany('App\Commentprojet');
+    }
 }
