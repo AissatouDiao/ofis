@@ -10,9 +10,8 @@
 <link href="/sass/style.css" rel="stylesheet">
 <link href="/sass/responsive.css" rel="stylesheet">
 <!-- Fav Icons -->
-<!-- Fav Icons -->
 <link rel="shortcut icon" href="/images/petit-logo.png" type="image/x-icon">
-<link rel="icon" href="/resources/images/petit-logo.png" type="image/x-icon">
+<link rel="icon" href="/images/petit-logo.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -666,5 +665,8 @@
 
 <script src="/js1/script.js"></script>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('/js1/main.js') }}">
 </body>
 </html>

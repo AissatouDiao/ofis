@@ -620,22 +620,22 @@ jQuery(document).ready(function() {
 
 
 <!-- jequery plugins -->
-<script src="../../resources/js/jquery.js"></script>
-<script src="../../resources/js/popover.js"></script>
-<script src="../../resources/js/bootstrap.min.js"></script>
+<script src="/js1/jquery.js"></script>
+<script src="/js1/popover.js"></script>
+<script src="/js1/bootstrap.min.js"></script>
 
-<script src="../../resources/js/wow.js"></script>
-<script src="../../resources/js/owl.js"></script>
-<script src="../../resources/js/validate.js"></script>
-<script src="../../resources/js/mixitup.js"></script>
-<script src="../../resources/js/isotope.js"></script>
-<script src="../../resources/js/appear.js"></script>
-<script src="../../resources/js/jquery.fancybox.js"></script>
+<script src="/js1/wow.js"></script>
+<script src="/js1/owl.js"></script>
+<script src="/js1/validate.js"></script>
+<script src="/js1/mixitup.js"></script>
+<script src="/js1/isotope.js"></script>
+<script src="/js1/appear.js"></script>
+<script src="/js1/jquery.fancybox.js"></script>
 
-<script src="../../resources/js/script.js"></script>
+<script src="/js1/script.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ asset('/js/main.js') }}">
+<script type="text/javascript" src="{{ asset('/js1/main.js') }}">
 
 </body>
 </html>
