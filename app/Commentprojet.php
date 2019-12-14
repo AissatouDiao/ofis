@@ -12,7 +12,5 @@ class Commentprojet extends Model
         return $this->belongsTo('App\Projet');
     }
 
-     public function replies(){
-        return $this->hasMany('App\reply2');
-    }
+   
 }
