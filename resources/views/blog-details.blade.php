@@ -258,31 +258,8 @@
                         </div>
                     </div>
 
-                    <!--post-share-options
-                    <div class="post-share-options clearfix mb-50">
-                        <div class="float-left tags"><span>Like</span></div>
-                        <div class="float-right">
-                            <span>Share This</span>
-                            <ul class="social-icon-three">
-                                <li class="share"><i class="flaticon-share-symbol"></i></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>-->
-
-                    <!-- Author box 
-                    <div class="author-box">
-                        <span class="border-shape-left"></span>
-                        <div class="inner-box">
-                            <div class="image"><img src="images/resource/author-4.jpg" alt=""></div>
-                            <div class="name">David B. Miller</div>
-                            <div class="text">Auis nostrud exercitation ullamc laboris nisitm aliquip ex bea sed conseua duis autes ure dolor magna aliqua nim ad minim voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-                        </div>
-                        <span class="border-shape-right"></span>
-                    </div>-->
+              
+                
 
 
 
@@ -347,7 +324,7 @@ jQuery(document).ready(function() {
                                             </div>
                                        </div>        
                                    </div>
-                                   
+                                   {{var_dump($commentaire->replies)}}
                                      @foreach ($commentaire->replies as $reply)
                                         <div class="comment-inner clearfix" style="padding:30px;">
                                         <div class="comment-info clearfix"><strong>{{$reply->nom}}. </strong></div>
