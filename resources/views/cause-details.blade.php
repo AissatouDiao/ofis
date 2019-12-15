@@ -318,7 +318,7 @@
                                         <div class='content'>
                                             <div class="dropdate" style="cursor:pointer;">reply</div>
                                                     <div class="cdropdate defhide">
-                                                        <form method="post" action="{{route('reponseprojet', [$commentaire->id])}}">
+                                                        <form method="post" action="{{route('reponsecommentaire', [$commentaire->id])}}">
                                                         @csrf
                                                         @method('post')
                                                             <div class="row clearfix">
@@ -349,7 +349,7 @@
                                         </div> 
                                     </div>
                                 </div>
-                                {{var_dump($commentaire->replies)}}
+                                {{var_dump($commentaire->reponses)}}
                              
                                
                             </div>
@@ -369,7 +369,7 @@
                             <div class="separator">
                             </div>
                         </div>
-                        <form method="post" action="{{route('commentaireprojet', [$projets->id])}}">
+                        <form method="post" action="{{route('projetcommentaire', [$projets->id])}}">
                          @csrf
                          @method('post')
                             <div class="row clearfix">
