@@ -16,7 +16,7 @@ class ReponsecommentaireprojetController extends Controller
         $reponse->projet_id=$commentaire->id;
         $reponse->email=$request->email;
         $reponse->nom=$request->nom;
-        $reponse->commmentaire=$request->commentaire;
+        $reponse->commentaire=$request->commentaire;
         $reponse->save();
         
         return redirect()->back();
