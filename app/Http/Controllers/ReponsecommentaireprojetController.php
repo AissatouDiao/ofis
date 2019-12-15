@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\RcRequest;
+use Illuminate\Http\Requests\RcRequest;
 use App\Reponseprojetcommentaire;
 use App\Projetcommentaire;
 
