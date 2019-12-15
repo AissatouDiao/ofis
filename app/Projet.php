@@ -9,7 +9,7 @@ class Projet extends Model
     protected $table='projets';
     
     public function comments(){
-        return $this->hasMany('App\Commentprojet');
+        return $this->hasMany('App\Projetcommentaire');
     }
 
     public function donsprojets(){
