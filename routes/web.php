@@ -59,8 +59,8 @@ Route::post('/commentaire/{articles}', 'CommentController@comment')->name('comme
 Route::delete('/supprimer/{id}', 'CommentController@delete')->name('supprimer');
 Route::post('/reponse/{comments}', 'ReplyController@reply')->name('reponse');
 
-Route::post('/commentaire/{projet}', 'CommentaireprojetController@commentaire')->name('projetcommentaire');
-Route::post('/reponse/{commentaire}', 'ReponsecommentaireController@reponse')->name('reponsecommentaire');
+Route::post('/commentaire1/{projet}', 'CommentaireprojetController@commentaire')->name('projetcommentaire');
+Route::post('/reponse1/{commentaire}', 'ReponsecommentaireController@reponse')->name('reponsecommentaire');
 
 
 
