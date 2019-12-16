@@ -321,7 +321,7 @@
                                             <div class="comment-inner clearfix">
                                                 <div class="comment-info clearfix"><strong>{{$commentaire->nom}}. </strong></div>
                                                 <div class="text">{{$commentaire->commentaire}}</div>
-                                                <div class="comment-time">{{$commentaire->created_at->diffForHumans()}</div>
+                                                <div class="comment-time">{{$commentaire->created_at->diffForHumans()}}</div>
                                             </div>
                                         </div>
                                     </div>
@@ -496,108 +496,108 @@
                 </div>
 
             </div>
-        </div>
-        
+            </div>
+            
 
-        <!-- Call To Action -->
-        <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
-            <div class="container">
-                <div class="row">
-                    <div class="title-column col-lg-8">
-                        <h2>S'inscrire à notre Newsletter</h2>
-                        <div class="text">Laisser nous votre email, pour recevoir nos newletters...</div>
-                    </div>
-                    <div class="subscribe-form col-lg-4">
-                        <form method="post" action="{{ route('newletter')}}">
-                            <div class="form-group">
-                                <input type="email" name="email" value="" placeholder="Votre email..." required="">
-                                <button type="submit" class="theme-btn"><span class="fa fa-paper-plane"></span></button>
-                            </div>
-                        </form>
+            <!-- Call To Action -->
+            <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="title-column col-lg-8">
+                            <h2>S'inscrire à notre Newsletter</h2>
+                            <div class="text">Laisser nous votre email, pour recevoir nos newletters...</div>
+                        </div>
+                        <div class="subscribe-form col-lg-4">
+                            <form method="post" action="{{ route('newletter')}}">
+                                <div class="form-group">
+                                    <input type="email" name="email" value="" placeholder="Votre email..." required="">
+                                    <button type="submit" class="theme-btn"><span class="fa fa-paper-plane"></span></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Main footer -->
-        <footer class="main-footer">
-            <div class="container">
+            <!-- Main footer -->
+            <footer class="main-footer">
+                <div class="container">
 
-                <!--Widgets Section-->
-                <div class="widgets-section">
-                    <div class="row clearfix">
-                        <!--Big Column-->
-                        <div class="big-column col-lg-5">
-                            <div class="row clearfix">
+                    <!--Widgets Section-->
+                    <div class="widgets-section">
+                        <div class="row clearfix">
+                            <!--Big Column-->
+                            <div class="big-column col-lg-5">
+                                <div class="row clearfix">
 
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-7">
-                                    <div class="footer-widget about-widget">
-                                        <div class="footer-logo">
-                                            <figure>
-                                                <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
-                                            </figure>
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-7">
+                                        <div class="footer-widget about-widget">
+                                            <div class="footer-logo">
+                                                <figure>
+                                                    <a href="index.html"><img src="/images/petit-logo.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="widget-content">
+                                                <div class="text">Suivez nous aussi à travers les réseaux sociaux...</div>
+                                                <ul class="social-icon-three">
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="widget-content">
-                                            <div class="text">Suivez nous aussi à travers les réseaux sociaux...</div>
-                                            <ul class="social-icon-three">
-                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            </ul>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5">
+                                        <div class="footer-widget services-widget">
+                                            <h2 class="widget-title">Nos partenaires</h2>
+                                            <div class="widget-content">
+                                                <ul class="list">
+                                                    <li><a href="#">Enabel</a></li>
+                                                    <li><a href="#">Concree</a></li>
+                                                    <li><a href="#">Usaid access</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-5">
-                                    <div class="footer-widget services-widget">
-                                        <h2 class="widget-title">Nos partenaires</h2>
-                                        <div class="widget-content">
-                                            <ul class="list">
-                                                <li><a href="#">Enabel</a></li>
-                                                <li><a href="#">Concree</a></li>
-                                                <li><a href="#">Usaid access</a></li>
-                                            </ul>
+                            <!--Big Column-->
+                            <div class="big-column col-lg-7">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5">
+
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-7">
+                                        <div class="footer-widget contact-widget">
+                                            <h2 class="widget-title">Contact</h2>
+                                            <div class="widget-content">
+                                                <ul class="contact-info-list">
+                                                    <li><i class="fas fa-map-marker-alt"></i>Dakar, Senegal</li>
+                                                    <li><i class="fas fa-phone"></i>Support: +(221) *** ** **</li>
+                                                    <li><i class="fas fa-envelope-open"></i>Email: ofissenegal@gmail.com</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!--Big Column-->
-                        <div class="big-column col-lg-7">
-                            <div class="row clearfix">
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-5">
-
-                                </div>
-
-                                <!--Footer Column-->
-                                <div class="footer-column col-md-7">
-                                    <div class="footer-widget contact-widget">
-                                        <h2 class="widget-title">Contact</h2>
-                                        <div class="widget-content">
-                                            <ul class="contact-info-list">
-                                                <li><i class="fas fa-map-marker-alt"></i>Dakar, Senegal</li>
-                                                <li><i class="fas fa-phone"></i>Support: +(221) *** ** **</li>
-                                                <li><i class="fas fa-envelope-open"></i>Email: ofissenegal@gmail.com</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!--Footer Bottom-->
+                <!--Footer Bottom-->
 
 
-        </footer>
+            </footer>
 
 
         </div>
