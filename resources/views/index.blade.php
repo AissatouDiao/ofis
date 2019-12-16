@@ -25,13 +25,7 @@
             <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
             <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
-            <script>
-                <?php
-                    $MT=$projet->montant_goal;
-                    $MR=$projet->donsprojets->sum('montant');
-                    $pourcentage=($MR*100)/$MT;
-                    ?>
-            </script>
+           
     </head>
 
     <body>
@@ -380,6 +374,7 @@
                                     <a href="{{route('lireleprojet', [$projet->id])}}">
                                         <h4>{{$projet->titre}}</h4>
                                     </a>
+                                     <?php $MT=$projet->montant_goal;$MR=$projet->donsprojets->sum('montant');$pourcentage=($MR*100)/$MT;?>
                                     <div class="text">{!!Str::words($projet->description, 70)!!}...</div><br>
                                     <!--Progress Levels-->
                                     <div class="progress-levels">
