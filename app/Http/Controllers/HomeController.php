@@ -29,7 +29,7 @@ class HomeController extends Controller
      
    
     public function index(){
-        $projets =Projet::orderBy('id', 'desc')->take(3)->get();
+        $projets =Projet::orderBy('id', 'desc')->take(2)->get();
         $articles=Summernote::orderBy('id', 'desc')->take(3)->get();
 
     
