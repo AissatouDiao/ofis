@@ -129,12 +129,12 @@ class ProjetsController extends Controller
    public function lesprojets(){
     $projets=Projet::paginate(10);
     return view('causes-1',compact('projets'));
-     }
+    }
    
 
-     public function donation($id){
+    public function donation($id){
         $projets=Projet::where('id',$id)->first();
         return view('admin.donsprojets',compact('projets'))->with('id',$id);
-         }
+    }
 
 }

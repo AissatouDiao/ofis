@@ -349,7 +349,7 @@
                                         </div> 
                                     </div>
                                 </div>
-                                {{var_dump($commentaire->reponses)}}
+                       
                              
                                
                             </div>

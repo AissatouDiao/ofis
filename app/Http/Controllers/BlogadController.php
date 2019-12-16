@@ -98,7 +98,7 @@ class BlogadController extends Controller
    public function fiche(){
     $articles=Summernote::paginate(10);
     return view('blog-1',compact('articles'));
-     }
+     } 
 
      public function lire($id)
      {     $projets =Projet::orderBy('id', 'desc')->take(1)->get();
