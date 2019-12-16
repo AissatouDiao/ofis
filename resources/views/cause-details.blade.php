@@ -301,7 +301,7 @@
                            <!--Comments Area-->
                     <div class="comments-area">
                         <div class="group-title">
-                            <h2>Commentaires ({{$projets->comments->count()}})</h2>
+                            <h2>Commentaires ({{$projets->commentaires->count()}})</h2>
                             <div class="separator">
                             </div>
                         </div>
