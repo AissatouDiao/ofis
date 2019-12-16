@@ -249,7 +249,7 @@
             <div class="container">
                 <div class="row">
                     <!--Content Side / Blogs Classic-->
-                    <div class="content-side col-lg-8">
+                    <div class="content-side col-lg-7">
                         <div class="service-details">
                             <!--Cause Block-->
                             <div class="cause-block-two">
@@ -327,6 +327,23 @@
                                 </div>
                                 @endforeach
                             </div>
+                            <h4>Nos généreux donateurs </h4><br>
+                            <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Montant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($projets->donsprojets as $projet)
+                                <tr>
+                                <td>{{$projet->nom}}</td>
+                                <td>{{$projet->montant}}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                            </table>
                         </div>
 
                         <!--End Comments Area-->
@@ -407,7 +424,7 @@
                     </div>
 
                     <!--Sidebar Side-->
-                    <div class="sidebar-side col-lg-4">
+                    <div class="sidebar-side col-lg-5">
                         <aside class="sidebar right-sidebar">
                             <div class="sidebar-widget  cause-widget">
                                 <div class="sidebar-title">
