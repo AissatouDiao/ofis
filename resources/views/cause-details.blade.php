@@ -305,7 +305,7 @@
                             <div class="separator">
                             </div>
                         </div>
-                        @foreach ($projets->comments as $commentaire)
+                        @foreach ($projets->commentaires as $commentaire)
                         <!--Comment Box-->
                         <div class="comment-box">
                             <div class="comment"> 

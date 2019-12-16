@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Projet extends Model
 {
-    protected $table='projets';
     
-    public function comments(){
+    
+    public function commentaires(){
         return $this->hasMany('App\Projetcommentaire');
     }
 
