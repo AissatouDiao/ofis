@@ -307,8 +307,6 @@
                                 <div class="row mt-50 mb-20">
                                     {!!$projets->description!!}
                                 </div>
-
-
                                 <!--Comments Area-->
                                 <div class="comments-area">
                                     <div class="group-title">
@@ -320,48 +318,15 @@
                                     <!--Comment Box-->
                                     <div class="comment-box">
                                         <div class="comment">
-
                                             <div class="comment-inner clearfix">
                                                 <div class="comment-info clearfix"><strong>{{$commentaire->nom}}. </strong></div>
                                                 <div class="text">{{$commentaire->commentaire}}</div>
-                                                <div class="comment-time">{{$commentaire->created_at->diffForHumans()}}
-
-                                                    <div class='content'>
-                                                        <div class="dropdate" style="cursor:pointer;">reply</div>
-                                                        <div class="cdropdate defhide">
-                                                            <form method="post" action="{{route('reponsecommentaire', [$commentaire->id])}}">
-                                                                @csrf @method('post')
-                                                                <div class="row clearfix">
-                                                                    <input type="hidden" name="comment_id" value="$commentaire->id">
-                                                                    <div class="column col-md-6 col-sm-6">
-                                                                        <div class="form-group">
-                                                                            <input type="text" name="nom" placeholder="Your Name" required="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="column col-md-6 col-sm-6">
-                                                                        <div class="form-group">
-                                                                            <input type="email" name="email" placeholder="Email" required="">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="column col-md-12 col-sm-12">
-                                                                        <div class="form-group">
-                                                                            <textarea name="reply" placeholder="reponse"></textarea>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit</button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <div class="comment-time">{{$commentaire->created_at->diffForHumans()}</div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                @endforeach
+                                    @endforeach
+                                </div> 
                             </div>
 
                             <!--End Comments Area-->
@@ -527,10 +492,6 @@
                                 @endforeach
                             </div>
                         </div>
-
-
-
-
                     </aside>
                 </div>
 
