@@ -260,7 +260,6 @@
                                         <div class="lower-content">
                                             <h4>{!! $projets->titre!!}</h4>
                                             <div class="text mb-30">{!!Str::words($projets->description, 20)!!}... </div>
-
                                             <div class="donate clearfix">
                                                 <div class="float-left">
                                                     <span>{{$projets->donsprojets->sum('montant')}} </span>
@@ -269,45 +268,39 @@
                                                     {{$projets->montant_goal}} FCFA
                                                 </div>
                                             </div>
-                                            <?php
-                                            $MT=$projets->montant_goal;
-                                            $MR=$projets->donsprojets->sum('montant');
-                                            $pourcentage=($MR*100)/$MT;
-                                            ?>
-                                                <!--Progress Levels-->
-                                                <div class="progress-levels">
 
-                                                    <!--Skill Box-->
-                                                    <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                                        <div class="inner">
-                                                            <div class="bar">
-                                                                <div class="bar-innner">
-                                                                    <div class="bar-fill" data-percent="{{round($pourcentage)}}">
-                                                                        <div class="percent"></div>
-                                                                    </div>
+                                            <!--Progress Levels-->
+                                            <div class="progress-levels">
+
+                                                <!--Skill Box-->
+                                                <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                                    <div class="inner">
+                                                        <div class="bar">
+                                                            <div class="bar-innner">
+                                                                <div class="bar-fill" data-percent="{{round($pourcentage)}}">
+                                                                    <div class="percent"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
+                                            </div>
 
-                                                <div class="clearfix mt-30 post-share-options">
-                                                    <div class="float-left">
-                                                        <div class="popup-link"><a href="../donsurprojet/{{$projets->id}}" class="theme-btn btn-style-two donate-box-btn">Faire un don</a></div>
-                                                    </div>
-                                                    <div class="float-right">
-                                                        <span>Share This</span>
-                                                        <ul class="social-icon-three list-inline-item">
-                                                            <li class="share"><i class="flaticon-share-symbol"></i></li>
-                                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                                        </ul>
-                                                    </div>
+                                            <div class="clearfix mt-30 post-share-options">
+                                                <div class="float-left">
+                                                    <div class="popup-link"><a href="../donsurprojet/{{$projets->id}}" class="theme-btn btn-style-two donate-box-btn">Faire un don</a></div>
                                                 </div>
-
+                                                <div class="float-right">
+                                                    <span>Share This</span>
+                                                    <ul class="social-icon-three list-inline-item">
+                                                        <li class="share"><i class="flaticon-share-symbol"></i></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -366,15 +359,9 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
-
                                     </div>
                                 </div>
-
-
                                 @endforeach
-
                             </div>
 
                             <!--End Comments Area-->
@@ -549,7 +536,7 @@
 
             </div>
         </div>
-        </div>
+        
 
         <!-- Call To Action -->
         <section class="subscribe-section" style="background-image: url(/images/newletters.jpg)">
