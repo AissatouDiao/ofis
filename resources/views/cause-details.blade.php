@@ -327,23 +327,6 @@
                                 </div>
                                 @endforeach
                             </div>
-                            <h4>Nos généreux donateurs </h4><br>
-                            <table class="table table-striped">
-                            <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Montant</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($projets->donsprojets as $projet)
-                                <tr>
-                                <td>{{$projet->nom}}</td>
-                                <td>{{$projet->montant}}</td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                            </table>
                         </div>
 
                         <!--End Comments Area-->
@@ -420,6 +403,25 @@
                                 </div>
                             </div><br><br>
                             <hr>
+                        </div>
+                        <div>
+                            <h4>Nos généreux donateurs </h4><br>
+                            <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Montant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($projets->donsprojets as $projet)
+                                <tr>
+                                <td>{{$projet->nom}}</td>
+                                <td>{{$projet->montant}}</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                            </table>
                         </div>
                     </div>
 
