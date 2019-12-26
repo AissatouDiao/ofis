@@ -137,7 +137,83 @@ li a:hover:not(.active) {
         </div>
       </div>
     </section>
-                       
+
+       <!-- Main footer -->
+            <footer class="main-footer">
+                <div class="container">
+
+                    <!--Widgets Section-->
+                    <div class="widgets-section">
+                        <div class="row clearfix">
+                            <!--Big Column-->
+                            <div class="big-column col-lg-5">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-7">
+                                        <div class="footer-widget about-widget">
+                                            <div class="footer-logo">
+                                                <figure>
+                                                    <a href="/home"><img src="/images/petit-logo.png" alt=""></a>
+                                                </figure>
+                                            </div>
+                                            <div class="widget-content">
+                                                <div class="text">Suivez nous aussi à travers les réseaux sociaux...</div>
+                                                <ul class="social-icon-three">
+                                                    <li><a href="https://www.facebook.com/ofisdusenegal"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="https://www.twitter.com/ofisdusenegal"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/ofisdusenegal"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/ofisdusenegal"><i class="fab fa-linkedin-in"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5">
+                                        <div class="footer-widget services-widget">
+                                            <h2 class="widget-title">Nos partenaires</h2>
+                                            <div class="widget-content">
+                                                <ul class="list">
+                                                    <li><a href="#">Enabel</a></li>
+                                                    <li><a href="#">Concree</a></li>
+                                                    <li><a href="#">Usaid access</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Big Column-->
+                            <div class="big-column col-lg-7">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5">
+
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-7">
+                                        <div class="footer-widget contact-widget">
+                                            <h2 class="widget-title">Contact</h2>
+                                            <div class="widget-content">
+                                                <ul class="contact-info-list">
+                                                    <li><i class="fas fa-map-marker-alt"></i>Dakar, Senegal</li>
+                                                    <li><i class="fas fa-phone"></i>Support: +(221) 77 436 66 84</li>
+                                                    <li><i class="fas fa-envelope-open"></i>Email: ofissenegal@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Footer Bottom-->                 
                  
          
     

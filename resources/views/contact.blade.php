@@ -207,7 +207,7 @@ include('../resources/views/header.php');
 </header>
 
     <!--Page title-->
-    <section class="page-title" style="background-image:url(../resources/images/contacus.jpg)">
+    <section class="page-title" style="background-image:url(/images/contacus.jpg)">
         <div class="container">
             <h1>Contactez nous</h1>
         </div>
@@ -229,7 +229,7 @@ include('../resources/views/header.php');
                 id="contact-google-map" 
                 data-map-lat="14.69457515" 
                 data-map-lng="-17.44585991" 
-                data-icon-path="../resources/images/map-marker.png"
+                data-icon-path="/images/map-marker.png"
                 data-map-title="Chester"
                 data-map-zoom="11" >
             </div>
@@ -305,7 +305,7 @@ include('../resources/views/header.php');
                     <ul class="contact-info-list">
                         <li><span class="fas fa-map-marker-alt"></span><b>Addresse</b>Dakar, Senegal</li>
                         <li><span class="fa fa fa-envelope-open"></span><b>Email</b>ofissenegal@gmailcom</li>
-                        <li><span class="fa fa-phone"></span><b>Telephone/ Fax</b>+221 77 *** ** ** </li>
+                        <li><span class="fa fa-phone"></span><b>Telephone/ Fax</b>+221 77 436 66 84 </li>
                         <li><span class="fa fa-globe"></span><b>Site Web</b>www.ofisdusenegal.com</li>
                     </ul>
                     <ul class="social-icon-three">

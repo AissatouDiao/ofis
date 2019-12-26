@@ -95,14 +95,12 @@
 
                         <!--Top Right-->
                         <div class="top-right">
-
                             <div class="social-links clearfix">
                                 <a href="https://www.twitter.com/ofisdusenegal"><span class="fab fa-twitter"></span></a>
                                 <a href="https://www.facebook.com/ofisdusenegal"><span class="fab fa-facebook"></span></a>
                                 <a href="https://www.instagram.com/ofisdusenegal"><span class="fab fa-instagram"></span></a>
                                 <a href="https://www.linkedin.com/ofisdusenegal"><span class="fab fa-linkedin-in"></span></a>
                             </div>
-
                         </div>
                     </div>
 
@@ -125,10 +123,10 @@
                                 <div class="navbar-header">
                                     <!-- Toggle Button -->
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>c
-                        </button>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    </button>
                                 </div>
 
                                 <div class="navbar-collapse collapse clearfix">
@@ -183,7 +181,6 @@
                         <div class="logo float-left">
                             <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
                         </div>
-
                         <!--Right Col-->
                         <div class="right-col float-right">
                             <!-- Main Menu -->
@@ -202,8 +199,6 @@
                             <!-- Main Menu End-->
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <!--End Sticky Header-->

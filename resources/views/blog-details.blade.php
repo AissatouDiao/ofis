@@ -471,7 +471,7 @@ jQuery(document).ready(function() {
                             <ul class="contact-info-list">
                                 <li><span class="fas fa-map-marker-alt"></span><b>Addresse</b>Dakar, Senegal</li>
                                 <li><span class="fa fa fa-envelope-open"></span><b>Email</b>ofissenegal@gmailcom</li>
-                                <li><span class="fa fa-phone"></span><b>Telephone/ Fax</b>+221 77 *** ** ** </li>
+                                <li><span class="fa fa-phone"></span><b>Telephone/ Fax</b>+221 77 436 66 84 </li>
                             </ul>
                         </div>
 
