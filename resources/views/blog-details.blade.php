@@ -567,7 +567,7 @@ jQuery(document).ready(function() {
                                     <div class="widget-content">
                                         <ul class="contact-info-list">
                                             <li><i class="fas fa-map-marker-alt"></i>Dakar, Senegal</li>
-                                            <li><i class="fas fa-phone"></i>Support: +(221) *** ** **</li>
+                                            <li><i class="fas fa-phone"></i>Support: +(221) 77 436 66 84</li>
                                             <li><i class="fas fa-envelope-open"></i>Email: ofissenegal@gmail.com</li>
                                         </ul>
                                     </div>       
