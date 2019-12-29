@@ -324,7 +324,7 @@ jQuery(document).ready(function() {
                                             </div>
                                        </div>        
                                    </div>
-                                   {{var_dump($commentaire->replies)}}
+                                   
                                      @foreach ($commentaire->replies as $reply)
                                         <div class="comment-inner clearfix" style="padding:30px;">
                                         <div class="comment-info clearfix"><strong>{{$reply->nom}}. </strong></div>

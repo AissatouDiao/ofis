@@ -112,7 +112,7 @@ include('../resources/views/header.php');
     <div class="container-fluid clearfix">
             
         <div class="float-left logo-outer">
-            <div class="logo"><a href="./home"><img src="../resources/images/petit-logo.png"  alt="" title=""></a></div>
+            <div class="logo"><a href="./home"><img src="/images/petit-logo.png"  alt="" title=""></a></div>
         </div>
         
         <div class="float-right upper-right clearfix">
@@ -179,7 +179,7 @@ include('../resources/views/header.php');
         <div class="clearfix">
             <!--Logo-->
             <div class="logo float-left">
-                <a href="./home" class="img-responsive"><img src="../resources/images/petit-logo.png" alt="" title=""></a>
+                <a href="./home" class="img-responsive"><img src="/images/petit-logo.png" alt="" title=""></a>
             </div>
             
             <!--Right Col-->
@@ -442,8 +442,8 @@ include('../resources/views/footer.php');
 
 <!-- map script -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBevTAR-V2fDy9gQsQn1xNHBPH2D36kck0"></script>
-<script src="../resources/js/gmaps.js"></script>
-<script id="map-script" src="../resources/js/map-script.js"></script>
+<script src="/js1/gmaps.js"></script>
+<script id="map-script" src="/js1/map-script.js"></script>
 
 </body>
 </html>
