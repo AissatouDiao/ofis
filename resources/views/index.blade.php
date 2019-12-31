@@ -362,7 +362,7 @@
                     <div class="row clearfix">
                         @foreach($projets as $projet)
                         <!--Cause Block-->
-                        <div class="cause-block col-lg-4 col-md-6 ">
+                        <div class="cause-block col-lg-4 col-md-6">
                             <div class="inner-box">
                                 <figure class="image">
                                     <img src="./{{$projet->image}}" style="width:360px;height:280px" alt="">

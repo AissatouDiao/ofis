@@ -373,58 +373,58 @@ include('../resources/views/header.php');
         </div>
     </section>
 
-    <!-- Welcome Section -->
-    <section class="welcome-section sp-two">
-        <div class="container">
-            <div class="row">
-                <!-- services block -->
-                <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
-                    <div class="inner-box hvr-float-shadow">
-                        <div class="icon"><span class="flaticon-button"></span></div>
-                        <h4><a href="{{url('donspage')}}">Faire un don</a></h4>
-                        <div class="text">un petit geste pour une grande aide.</div>
-                        <div class="read-more">
-                            <a href="{{url('donspage')}}"><span class="flaticon-right-arrow"></span></a>
+        <!-- Welcome Section -->
+        <section class="welcome-section sp-two">
+                <div class="container">
+                    <div class="row">
+                        <!-- services block -->
+                        <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="inner-box hvr-float-shadow">
+                                <div class="icon"><span class="flaticon-button"></span></div>
+                                <h4><a href="{{url('donspage')}}">Faire un don</a></h4>
+                                <div class="text">un petit geste pour une grande aide.</div>
+                                <div class="read-more">
+                                    <a href="{{url('donspage')}}"><span class="flaticon-right-arrow"></span></a>
+                                </div>
+                            </div>
                         </div>
+                        <!-- services block -->
+                        <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="inner-box hvr-float-shadow">
+                                <div class="icon"><span class="flaticon-support"></span></div>
+                                <h4><a href="{{url('projets')}}">Projets en cours</a></h4>
+                                <div class="text">Consulter nos projets en cours de développement.</div>
+                                <div class="read-more">
+                                    <a href="{{url('projets')}}"><span class="flaticon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- services block -->
+                        <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="inner-box hvr-float-shadow">
+                                <div class="icon"><span class="flaticon-donation"></span></div>
+                                <h4><a href="{{url('blog')}}">Nos réalisations</a></h4>
+                                <div class="text">Consulter les projets que nous avons eu à réaliser</div>
+                                <div class="read-more">
+                                    <a href="{{url('blog')}}"><span class="flaticon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- services block -->
+                        <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="inner-box hvr-float-shadow">
+                                <div class="icon"><span class="flaticon-quotations"></span></div>
+                                <h4><a href="{{url('blog')}}">Consulter notre blog</a></h4>
+                                <div class="text">Passez par ici pour lire les articles de notre blog.</div>
+                                <div class="read-more">
+                                    <a href="{{url('blog')}}"><span class="flaticon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
                     </div>
                 </div>
-                 <!-- services block -->
-                 <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
-                    <div class="inner-box hvr-float-shadow">
-                        <div class="icon"><span class="flaticon-support"></span></div>
-                        <h4><a href="{{url('projets')}}">Projets en cours</a></h4>
-                        <div class="text">Consulter nos projets en cours de développement.</div>
-                        <div class="read-more">
-                            <a href="{{url('projets')}}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-                  <!-- services block -->
-                  <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
-                    <div class="inner-box hvr-float-shadow">
-                        <div class="icon"><span class="flaticon-donation"></span></div>
-                        <h4><a href="#">Nos réalisations</a></h4>
-                        <div class="text">Consulter les projets que nous avons eu à réaliser</div>
-                        <div class="read-more">
-                            <a href="#"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- services block -->
-                <div class="services-block-one col-lg-3 col-md-6 col-sm-6">
-                    <div class="inner-box hvr-float-shadow">
-                        <div class="icon"><span class="flaticon-quotations"></span></div>
-                        <h4><a href="{{url('blog')}}">Consulter notre blog</a></h4>
-                        <div class="text">Passez par ici pour lire les articles de notre blog.</div>
-                        <div class="read-more">
-                            <a href="{{url('blog')}}"><span class="flaticon-right-arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- end -->
-            </div>
-        </div>
-    </section>
+            </section>
 
     <section class="our-team sp-one">
         <div class="container">
