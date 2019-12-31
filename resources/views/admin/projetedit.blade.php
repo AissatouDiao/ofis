@@ -196,11 +196,9 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> 
-{!! $projets->titre !!}</h4>
+                <h4 class="card-title">{!! $projets->titre !!}</h4>
               </div>
               <div class="card-body">
-
               @if(!empty($successMsg))
             <div class="alert alert-info"> {{ $successMsg }}</div>
             @endif
