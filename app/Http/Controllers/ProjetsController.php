@@ -83,9 +83,9 @@ class ProjetsController extends Controller
         return back();
     }
 
-    public function update(Request $request)
+    public function update(Request $request,$id)
     {
-        if ($request['image']==null){
+        /*if ($request['image']==null){
         if($request['image']->isValid()){
             $repertoire=public_path() .'/image_couv_proj';
             $extension =$request['image']->getClientOriginalExtension();
@@ -98,14 +98,14 @@ class ProjetsController extends Controller
         $path_image='image_couv_proj' . '/' . $nom;
         }
 
-        $path_image=$request['image'];
+        $path_image=$request['image'];*/
     
 
         $projet=Projet::where('id',$request['id'])->update(
             [
                 'titre'=>$request['titre'],
                 'description'=>$request['description'],
-                'image'=>$path_image,
+                'image'=>$request['image'],
                 'montant_goal'=>$request['montant_goal']
             ]
         );
