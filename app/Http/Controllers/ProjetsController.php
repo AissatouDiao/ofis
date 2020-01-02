@@ -83,7 +83,7 @@ class ProjetsController extends Controller
         return back();
     }
 
-    public function update(Request $request,$id)
+    public function update(Request $request)
     {
         /*if ($request['image']==null){
         if($request['image']->isValid()){
