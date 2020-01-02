@@ -28,62 +28,65 @@ include('../resources/views/header.php');
 <div class="header-top dark">
     <div class="container-fluid">
         <div class="outer-box">
-            <!--Top Left-->
-            <div class="top-left">
-            @if(Auth::check())
-                @if(Auth::user()->is_admin==0)
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                <h5 style="color:white"> <div class="icon"><span class="flaticon-social"> {{ Auth::user()->name }}</span></div></h5> <span class="caret"></span>
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="./myp">Mon Projet</a>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();" >
-                                            {{ __('Deconnexion') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;background-color:black;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                @elseif(Auth::user()->is_admin==1)
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                <h5 style="color:white"> <div class="icon"><span class="flaticon-social"> {{ Auth::user()->name }}</span></div></h5> <span class="caret"></span>
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href=".admin">Mon Projet</a>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();" >
-                                            {{ __('Deconnexion') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;background-color:black;">
-                                            @csrf
-                                        </form>
-                                    </div>
-                @endif
-            @else
-
+           <!--Top Left-->
+           <div class="top-left">
+                                @if(Auth::check()) @if(Auth::user()->is_admin==0)
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-              <h6 style="color:white"> <div class="icon"><span class="flaticon-social"> Se connecter | S'inscrire</span></div></h6> <span class="caret"></span>
+                                    <h5 style="color:white">
+                                        <div class="icon"><span class="flaticon-social"> {{ Auth::user()->name }}  {{ Auth::user()->prenom }}</span></div>
+                                    </h5> <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a>
-                                </li>
-                            @endif
+                                    <a class="dropdown-item" href="./myp">Mon Projet</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                        document.getElementById('logout-form').submit();">
+                                                            {{ __('Deconnexion') }}
+                                                        </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;background-color:black;">
+                                        @csrf
+                                    </form>
                                 </div>
-            @endif
-            </div>
+                                @elseif(Auth::user()->is_admin==1)
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <h5 style="color:white">
+                                        <div class="icon"><span class="flaticon-social"> {{ Auth::user()->name }}  {{ Auth::user()->prenom }}</span></div>
+                                    </h5> <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="admin">Administration</a>
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                        document.getElementById('logout-form').submit();">
+                                                            {{ __('Deconnexion') }}
+                                                        </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;background-color:black;">
+                                        @csrf
+                                    </form>
+                                </div>
+                                @endif @else
+
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <h6 style="color:white">
+                                        <div class="icon"><span class="flaticon-social"> Se connecter | S'inscrire</span></div>
+                                    </h6> <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+                                    </li>
+                                    @if (Route::has('register'))
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('register') }}">{{ __('S\'inscrire') }}</a>
+                                    </li>
+                                    @endif
+                                </div>
+                                @endif
+                            </div>
+
 
             <!--Top Right-->
             <div class="top-right">
