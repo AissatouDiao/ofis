@@ -37,8 +37,11 @@ class HomeController extends Controller
        }
 
    public function admin(){
+    $usersChart = new UserChart;
+    $usersChart->labels(['Jan', 'Feb', 'Mar']);
+    $usersChart->dataset('Users by trimester', 'line', [10, 25, 13]);
 
-       return view('admin/dashboard');
+       return view('admin/dashboard', [ 'usersChart' => $usersChart ]);
        
    }
 

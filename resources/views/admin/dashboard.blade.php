@@ -5,7 +5,10 @@
 <?php
 include('../resources/views/admin/header.php');
 ?>
-
+    {{-- ChartScript --}}
+    @if($usersChart)
+    {!! $usersChart->script() !!}
+    @endif
 </head>
 
 <body class="">
@@ -361,6 +364,11 @@ include('../resources/views/admin/nav.php');
           </div>
         </div>
       </div>
+
+      <div style="width: 50%">
+    {!! $usersChart->container() !!}
+</div>
+
       <footer class="footer">
         <div class="container-fluid">
           <nav>
