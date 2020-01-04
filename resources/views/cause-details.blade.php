@@ -133,7 +133,7 @@
                 <div class="container-fluid clearfix">
 
                     <div class="logo float-left">
-                        <a href="./home" class="img-responsive"><img src="/images/grand-logo.png" alt="" title=""></a>
+                        <a href="{{ url('home') }}" class="img-responsive"><img src="/images/grand-logo.png" alt="" title=""></a>
                     </div>
                     <div class="float-right upper-right clearfix">
 
