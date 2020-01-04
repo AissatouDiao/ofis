@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Projet;
 use App\DonsProjet;
 use App\Summernote;
+use App\Charts\UserChart;
 
 class HomeController extends Controller
 {
