@@ -42,7 +42,8 @@ class HomeController extends Controller
     $usersChart->labels(['Jan', 'Feb', 'Mar']);
     $usersChart->dataset('Users by trimester', 'line', [10, 25, 13]);
 
-       return view('admin/dashboard', [ 'usersChart' => $usersChart ]);
+       //return view('admin/dashboard', [ 'usersChart' => $usersChart ]);
+       return view('admin/dashboard', compact('usersChart'));
        
    }
 
