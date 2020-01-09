@@ -290,7 +290,7 @@
   </div>
   <script src="/js1/jquery.js"></script>
 <script src="/js1/popover.js"></script>
-<script src="/js1/resources/js/bootstrap.min.js"></script>
+<script src="/js1/bootstrap.min.js"></script>
 
 <script src="/js1/wow.js"></script>
 <script src="/js1/owl.js"></script>
