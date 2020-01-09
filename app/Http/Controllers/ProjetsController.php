@@ -102,7 +102,7 @@ class ProjetsController extends Controller
             [
                 'titre'=>$request['titre'],
                 'description'=>$request['description'],
-                'image'=>$request['description'],
+                'image'=>$request['image'],
                 'montant_goal'=>$request['montant_goal']
             ]
         );

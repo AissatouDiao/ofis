@@ -276,14 +276,14 @@ background-position: center;background-repeat: no-repeat;
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('telephone') ? 'has-error' : '' !!}">
                                 <p>Téléphone*</p>
-                                <input type="text" name="telephone" placeholder="">
+                                <input type="tel" name="telephone" placeholder="">
                                 {!! $errors->first('telephone', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div> 
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
                                 <p>Montant de la donation*</p>
-                                <input type="number" name="montant" placeholder="">
+                                <input type='currency' name="montant" placeholder="">
                                 {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div> 
@@ -413,7 +413,34 @@ background-position: center;background-repeat: no-repeat;
        
         
     </footer>
+    <script>
+    var currencyInput = document.querySelector('input[type="currency"]');
+var currency = 'XOF'; // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
 
+currencyInput.addEventListener('focus', onFocus);
+currencyInput.addEventListener('blur', onBlur);
+
+function localStringToNumber( s ){
+    return Number(String(s).replace(/[^0-9.-]+/g,""));
+}
+
+function onFocus(e){
+  var value = e.target.value;
+  e.target.value = value ? localStringToNumber(value) : '';
+}
+
+function onBlur(e){
+  var value = e.target.value;
+
+  const options = {
+      maximumFractionDigits : 2,
+      currency              : currency,
+      style                 : "currency",
+      currencyDisplay       : "symbol"
+  }
+  
+  e.target.value = value 
+    ? localStringToNumber(value).toLocaleString(undefined, option
     <?php
 include('../resources/views/footer.php');
 ?>
