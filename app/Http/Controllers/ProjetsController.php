@@ -23,7 +23,7 @@ class ProjetsController extends Controller
         $detail=$request->input('description');
  
         $dom = new \domdocument();
-        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
+        $dom->loadHtml($detail, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD |  LIBXML_NOERROR |  LIBXML_NOWARNING );
         $images = $dom->getelementsbytagname('img');
  
         //loop over img elements, decode their base64 src and save them to public folder,
@@ -85,7 +85,7 @@ class ProjetsController extends Controller
 
     public function update(Request $request)
     {
-        /*if ($request['image']==null){
+        
         if($request['image']->isValid()){
             $repertoire=public_path() .'/image_couv_proj';
             $extension =$request['image']->getClientOriginalExtension();
@@ -96,16 +96,13 @@ class ProjetsController extends Controller
             $request['image']->move( $repertoire, $nom);
         }
         $path_image='image_couv_proj' . '/' . $nom;
-        }
-
-        $path_image=$request['image'];*/
     
 
         $projet=Projet::where('id',$request['id'])->update(
             [
                 'titre'=>$request['titre'],
                 'description'=>$request['description'],
-                'image'=>$request['image'],
+                'image'=>$path_image,
                 'montant_goal'=>$request['montant_goal']
             ]
         );
