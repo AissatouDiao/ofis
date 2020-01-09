@@ -362,13 +362,7 @@ include('../resources/views/admin/nav.php');
         </div>
       </div>
 
-      <div style = "width: 80%; margin: 0 auto;">
-          <div style = " width : 80 %; margin : 0 auto ; " >    
-            {!! $chart->container () !!}
-        </div></div>
-        
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js" charset = "utf-8"> </script>
-        {!! $chart->script () !!}
+  
       <footer class="footer">
         <div class="container-fluid">
           <nav>
