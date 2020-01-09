@@ -214,7 +214,7 @@
               <hr>
               <div style="color:#0066ff;text-align:center;" class="form-group {!! $errors->has('image') ? 'has-error' : '' !!}">
               <label for="image"><i class="now-ui-icons arrows-1_cloud-download-93"></i><h5 > Ajouter image de couverture(cliquez)</h5></label>
-              <input class="form-control" accept="image/gif, image/jpeg, image/png,image/jpg" type="file" name="image" id="image" value="../{{$projets->image}}">
+              <input class="form-control" accept="image/gif, image/jpeg, image/png,image/jpg" type="file" name="image" id="image" value="{{$projets->image}}">
               {!! $errors->first('image', '<small class="help-block">:message</small>') !!}
               </div>
              <hr>

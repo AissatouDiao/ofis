@@ -97,10 +97,7 @@ class ProjetsController extends Controller
         }
         $path_image='image_couv_proj' . '/' . $nom;*/
     
-        $request->validate([
-            
-            'image' => 'nullable',
-        ]);
+     
         $projet=Projet::where('id',$request['id'])->update(
             [
                 'titre'=>$request['titre'],
