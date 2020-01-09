@@ -439,7 +439,7 @@
                                 <div class="inner-box">
                                     <figure class="image">
                                         <img src="../{{$projet->image}}" style="width:360px;height:280;" alt="">
-                                        <div class="overlay"><a href="{{route('donsprojetproposition', [$projet->id])}}" class="theme-btn btn-style-two donate-box-btn">faire un don</a>
+                                        <div class="overlay"><a href="{{route('donsprojet', [$projet->id])}}" class="theme-btn btn-style-two donate-box-btn">faire un don</a>
                                         </div>
                                     </figure>
                                     <div class="text"><a href="{{route('lireleprojet', [$projet->id])}}">{{$projet->titre}}</a></div>

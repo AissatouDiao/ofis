@@ -63,6 +63,7 @@ class ProjetdonsController extends Controller
     public function afficher($id){
         return view('donsprojets')->with('id',$id);
     }
+    
 
     public function lire($id)
    {
