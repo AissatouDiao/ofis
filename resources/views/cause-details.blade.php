@@ -445,7 +445,7 @@
                                     <div class="text"><a href="{{route('lireleprojet', [$projet->id])}}">{{$projet->titre}}</a></div>
                                     <div class="lower-content">
                                         <h4>{!! $projet->titre!!}</h4>
-                                        <div class="text mb-30">{!!Str::words($projet->description, 20)!!}... </div>
+                                        <div class="text mb-30">{!!Str::words($projet->description,20)!!}... </div>
                                         <!--Progress Levels-->
                                         <div class="progress-levels">
                                             <!--Skill Box-->
