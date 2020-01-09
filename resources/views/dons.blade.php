@@ -413,7 +413,7 @@ background-position: center;background-repeat: no-repeat;
        
         
     </footer>
-    <script>
+<script>
     var currencyInput = document.querySelector('input[type="currency"]');
 var currency = 'XOF'; // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
 
@@ -440,7 +440,10 @@ function onBlur(e){
   }
   
   e.target.value = value 
-    ? localStringToNumber(value).toLocaleString(undefined, option
+    ? localStringToNumber(value).toLocaleString(undefined, options)
+    : ''
+}
+</script>
     <?php
 include('../resources/views/footer.php');
 ?>
