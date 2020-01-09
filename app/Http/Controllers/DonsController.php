@@ -40,7 +40,7 @@ class DonsController extends Controller
 
     public function propositionsdons()
     {
-        $dons=Donsproposition::paginate(3);
+        $dons=Dons::paginate(3);
         return view('admin.propositionsdons',compact('dons'));
     }
 
