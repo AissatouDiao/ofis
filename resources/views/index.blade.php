@@ -375,7 +375,7 @@
                                         <h4>{{$projet->titre}}</h4>
                                     </a>
                                      <?php $MT=$projet->montant_goal;$MR=$projet->donsprojets->sum('montant');$pourcentage=($MR*100)/$MT;?>
-                                    <div class="text" style="height:100px;width:300px;">{!!Str::words($projet->description,50)!!}...</div><br>
+                                    <div class="text" sstyle="height:200px;width:350px;">{!!Str::words($projet->description,50)!!}...</div><br>
                                     <!--Progress Levels-->
                                     <div class="progress-levels">
                                         <!--Skill Box-->
