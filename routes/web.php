@@ -47,7 +47,7 @@ Route::get('/','HomeController@index')->name('home');
 Route::get('/blog', 'BlogadController@fiche');
 Route::get('/lirearticle/{id}', 'BlogadController@lire')->name('lirearticle');
 
-Route::get('/donsurprojet/{id}', 'ProjetdonsController@afficher');
+Route::get('/donsurprojet/{id}', 'ProjetdonsController@afficher')->name('donsurprojet');
 Route::post('/donsprojet/{id}', 'ProjetdonsController@donation')->name('donsprojet');
 Route::post('/donsprojetproposition/{id}', 'ProjetdonsController@donationproposition')->name('donsprojetproposition');
 

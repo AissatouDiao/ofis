@@ -261,7 +261,7 @@
                                         {{$projet->montant_goal}}
                                     </div>
                                 </div>
-                                <div class="link-btn"><a href="./donsurprojet/{{$projet->id}}" class="theme-btn btn-style-four donate-box-btn">Faire un don</a></div>
+                                <div class="link-btn"><a href="{{route('donsurprojet', [$projet->id])}}" class="theme-btn btn-style-four donate-box-btn">Faire un don</a></div>
                            </div>
                        </div>
                     </div>
