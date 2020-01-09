@@ -236,7 +236,7 @@
                             <div class="lower-content">
                                 <h5></h5>
                                 <h4><a href="{{route('lireleprojet', [$projet->id])}}">{{$projet->titre}}</a></h4>
-                                <div class="text">{!!Str::words($projet->description, 50)!!}...</div>
+                                <div class="text" style="height:100px;width:300px;">{!!Str::words($projet->description, 50)!!}...</div>
                                 <?php $MT=$projet->montant_goal;$MR=$projet->donsprojets->sum('montant');$pourcentage=($MR*100)/$MT;?>
                                 <!--Progress Levels-->
                                 <div class="progress-levels">
