@@ -304,7 +304,7 @@ jQuery(document).ready(function() {
                                                                <input type="hidden" name="comment_id" value="$commentaire->id">
                                                             <div class="column col-md-6 col-sm-6">
                                                                 <div class="form-group">
-                                                                    <input type="text" name="nom" placeholder="Your Name" required="">
+                                                                   <input type="text" name="nom" placeholder="Your Name" required="">
                                                                 </div>
                                                             </div>
                                                             <div class="column col-md-6 col-sm-6">

@@ -63,8 +63,8 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="now-ui-icons files_single-copy-04"></i>Blog
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="./blogadmin">Nouveau article</a>
-                  <a class="dropdown-item" href="./articles">Les artcles</a>
+                  <a class="dropdown-item" href="{{ url('blogadmin' )}}">Nouveau article</a>
+                  <a class="dropdown-item" href="{{ url('articles' )}}">Les artcles</a>
                   
                 </div>
                 </a>

@@ -205,7 +205,7 @@
             <div class="alert alert-success"> {{ $successMsg }}</div>
             @endif
 
-            <form action="{{route('donsprojet', [$id])}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donationad, [$projet->id])}}" method="post" enctype="multipart/form-data">
            @csrf
                  <?php
                  $nombre=(int)$id;
@@ -217,7 +217,7 @@
 
                         
 
-                        <input type="hidden" name="projet_id" value="{{$nombre}}">
+                        <input type="hidden" name="projet_id" value="$projet->id">
                         
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">

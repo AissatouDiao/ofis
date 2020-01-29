@@ -230,7 +230,7 @@ background-position: center;background-repeat: no-repeat;
             @if(!empty($successMsg))
             <div class="alert alert-info"> {{ $successMsg }}</div>
             @endif
-            <form action="{{route('donsprojetproposition', [$id])}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donsprojetproposition', [$projet->id])}}" method="post" enctype="multipart/form-data">
            
             @csrf
 
@@ -249,7 +249,7 @@ background-position: center;background-repeat: no-repeat;
 
                         
 
-                        <input type="hidden" name="projet_id" value="{{$nombre}}">
+                        <input type="hidden" name="projet_id" value="$projet->id">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
                                 <p>Nom*</p>

@@ -296,7 +296,7 @@
 <script src="/js1/owl.js"></script>
 <script src="/js1/validate.js"></script>
 <script src="/js1/mixitup.js"></script>
-<script src="./js1/isotope.js"></script>
+<script src="/js1/isotope.js"></script>
 <script src="/js1/appear.js"></script>
 <script src="/js1/jquery.fancybox.js"></script>
 
