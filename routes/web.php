@@ -37,7 +37,7 @@ Route::get('/contact', function () {
 
 Auth::routes();
 Route::get('/donspage','DonsController@der');
-Route::post('/dons/{projet}','DonsController@store')->name('dons');
+Route::post('/dons','DonsController@store')->name('dons');
 
 Route::get('/contact','ContactController@afficher' );
 Route::post('/contact','ContactController@postForm' );
