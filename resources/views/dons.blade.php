@@ -283,7 +283,7 @@ background-position: center;background-repeat: no-repeat;
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
                                 <p>Montant de la donation*</p>
-                                <input type='currency' name="montant" placeholder="">
+                                <input type="number"  name="montant" placeholder="">
                                 {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div> 
@@ -414,13 +414,13 @@ background-position: center;background-repeat: no-repeat;
         
     </footer>
 <script>
-    var currencyInput = document.querySelector('input[type="currency"]');
-var currency = 'XOF'; // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
+    var currencyInput = document.querySelector('input[type="number"]');
+var currency = 'XOF';
 
 currencyInput.addEventListener('focus', onFocus);
 currencyInput.addEventListener('blur', onBlur);
 
-function localStringToNumber( s ){
+function localStringToNumber(s){
     return Number(String(s).replace(/[^0-9.-]+/g,""));
 }
 
@@ -441,7 +441,7 @@ function onBlur(e){
   
   e.target.value = value 
     ? localStringToNumber(value).toLocaleString(undefined, options)
-    : ''
+    : '';
 }
 </script>
     <?php

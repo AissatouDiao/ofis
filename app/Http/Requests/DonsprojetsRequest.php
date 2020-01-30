@@ -29,8 +29,8 @@ class DonsprojetsRequest extends FormRequest
             'prenom' => 'required|max:30|alpha',
 			'email' => 'required|email',
             'adresse' => 'required|max:250',
-            'telephone'=>'required|min:7|max:20',
-            'montant'=>'required|integer',
+            'telephone'=>'required|numeric|regex:/[0-9]{7,15}/', 
+            'montant'=>'required|decimal',
             'is_ano'=>'boolean',
         ];
     }
