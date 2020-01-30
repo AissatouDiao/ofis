@@ -283,7 +283,7 @@ background-position: center;background-repeat: no-repeat;
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
                                 <p>Montant de la donation*</p>
-                                <input type="number"  name="montant" placeholder="">
+                                <input type="currency"  name="montant" placeholder="">
                                 {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
                             </div>
                         </div> 
@@ -414,7 +414,7 @@ background-position: center;background-repeat: no-repeat;
         
     </footer>
 <script>
-    var currencyInput = document.querySelector('input[type="number"]');
+    var currencyInput = document.querySelector('input[type="currency"]');
 var currency = 'XOF';
 
 currencyInput.addEventListener('focus', onFocus);
