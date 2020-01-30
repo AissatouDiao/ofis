@@ -19,7 +19,7 @@ class DonsController extends Controller
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
-        $dons->montant=$request->montant;
+        $dons->montant=number_format($request->montant);
         $dons->is_ano=$request->is_ano;
 
         $dons->save();

@@ -421,7 +421,7 @@ currencyInput.addEventListener('focus', onFocus);
 currencyInput.addEventListener('blur', onBlur);
 
 function localStringToNumber(s){
-    return Number(String(s).replace(/[^0-9.-]+/g,""));
+    return parseInt(String(s).replace(/[^0-9.-]+/g,""));
 }
 
 function onFocus(e){
