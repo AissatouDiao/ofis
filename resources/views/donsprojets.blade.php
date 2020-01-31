@@ -234,6 +234,10 @@ background-position: center;background-repeat: no-repeat;
             <script>
             var montant=document.getElementById('donate-amount');
             </script>
+
+                <?php
+                 $nombre=(int)$id;
+                 ?>
         
         @if(!empty($successMsg))
             <div class="alert alert-info"> {{ $successMsg }}</div>
