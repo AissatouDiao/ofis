@@ -19,8 +19,9 @@ class DonsController extends Controller
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
-        $dons->montant=number_format($request->montant);
+        $dons->montant=preg_replace("/[^0-9]/", '',$request->montant);
         $dons->is_ano=$request->is_ano;
+
 
         $dons->save();
         return redirect()->back()->with('successMsg','Votre requête a été prise en compte');
