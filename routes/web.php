@@ -37,7 +37,7 @@ Route::get('/contact', function () {
 
 Auth::routes();
 Route::get('/donspage','DonsController@der');
-Route::post('/dons','DonsController@store')->name('dons');
+Route::post('/donspage','AlldonsControllers@storedons')->name('dons');
 
 Route::get('/contact','ContactController@afficher' );
 Route::post('/contact','ContactController@postForm' );
@@ -48,7 +48,7 @@ Route::get('/blog', 'BlogadController@fiche');
 Route::get('/lirearticle/{id}', 'BlogadController@lire')->name('lirearticle');
 
 Route::get('/donsurprojet/{id}', 'ProjetdonsController@afficher')->name('donsurprojet');
-Route::post('/donsprojet/{projet}', 'ProjetdonsController@donation')->name('donsprojetproposition');
+Route::post('/donsprojet/{projet}', 'AlldonsControllers@storedonspropositions')->name('donsprojetproposition');
 
 Route::get('/lireleprojet/{id}', 'ProjetdonsController@lire')->name('lireleprojet');
 Route::get('/projets','ProjetsController@lesprojets' );
@@ -97,7 +97,7 @@ Route::group(['middleware'=>['auth','admin']],function(){
     Route::delete('/supprimerprojet/{id}', 'ProjetsController@delete')->name('supprimerprojet');
     Route::put('/updateprojet', 'ProjetsController@update');
     Route::get('/donationad/{id}', 'ProjetsController@donation')->name('donationad');
-    Route::post('/donationad/{projet}', 'ProjetsController@donation')->name('donationad');
+    Route::post('/donationad/{projet}', 'AlldonsControllers@storedonsprojets')->name('donationad');
 
     Route::get('/searchprojetB', 'MyprojetController@search');
     Route::get('/gestionprojetsB', 'MyprojetController@gestionprojets');

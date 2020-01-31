@@ -20,7 +20,7 @@ class AlldonsControllers extends Controller
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
-        $dons->montant=$request->montant;
+        $dons->montant=preg_replace("/[^0-9]/", '',$request->montant);
         $dons->is_ano=$request->is_ano;
 
         $dons->save();
@@ -37,7 +37,7 @@ class AlldonsControllers extends Controller
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
-        $dons->montant=$request->montant;
+        $dons->montant=preg_replace("/[^0-9]/", '',$request->montant);
         $dons->is_ano=$request->is_ano;
 
         $dons->save();
@@ -54,7 +54,7 @@ class AlldonsControllers extends Controller
         $dons->email=$request->email;
         $dons->adresse=$request->adresse;
         $dons->telephone=$request->telephone;
-        $dons->montant=$request->montant;
+        $dons->montant=preg_replace("/[^0-9]/", '',$request->montant);
         $dons->is_ano=$request->is_ano;
 
         $dons->save();
