@@ -29,7 +29,7 @@ class DonspropositionRequest extends FormRequest
 			'email' => 'required|email',
             'adresse' => 'required|max:250',
             'telephone'=>'required|numeric|regex:/[0-9]{7,15}/', 
-            'montant'=>'required|decimal',
+            'montant'=>'required',
             'is_ano'=>'boolean',
         ];
     }

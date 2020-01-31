@@ -221,9 +221,7 @@ background-position: center;background-repeat: no-repeat;
 <div ></div>
 <div class="container" style="padding:100px;">
 <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
-            @if(!empty($successMsg))
-            <div class="alert alert-info"> {{ $successMsg }}</div>
-            @endif
+           
         <div class="donate-form-area">
             <div class="section-title center">
                 <h2>Proposition de don</h2>
@@ -237,10 +235,9 @@ background-position: center;background-repeat: no-repeat;
             var montant=document.getElementById('donate-amount');
             </script>
         
-
-                <?php var_dump($id);
-                 $nombre=(int)$id;
-                 ?>
+        @if(!empty($successMsg))
+            <div class="alert alert-info"> {{ $successMsg }}</div>
+            @endif
                 <h3>Informations du donneur</h3>
 
                 <div class="form-bg">
