@@ -229,7 +229,7 @@ background-position: center;background-repeat: no-repeat;
                 <h2>Proposition de don</h2>
             </div>
 
-            <form action="{{route('donsprojetproposition', [$projet])}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donsprojetproposition', [$id])}}" method="post" enctype="multipart/form-data">
            
             @csrf
 
@@ -248,7 +248,7 @@ background-position: center;background-repeat: no-repeat;
 
                         
 
-                        <input type="hidden" name="projet_id" value="$projet->id">
+                        <input type="hidden" name="projet_id" value="$nombre">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
                                 <p>Nom*</p>
