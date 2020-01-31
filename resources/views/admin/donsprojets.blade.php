@@ -205,7 +205,7 @@
             <div class="alert alert-success"> {{ $successMsg }}</div>
             @endif
 
-            <form action="{{route('donationad, [$projet->id])}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donationad', [$projet->id]) }}" method="post" enctype="multipart/form-data">
            @csrf
                  <?php
                  $nombre=(int)$id;

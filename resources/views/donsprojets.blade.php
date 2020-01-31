@@ -220,17 +220,16 @@ background-position: center;background-repeat: no-repeat;
   background-size: cover;">
 <div ></div>
 <div class="container" style="padding:100px;">
-
+<h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
+            @if(!empty($successMsg))
+            <div class="alert alert-info"> {{ $successMsg }}</div>
+            @endif
         <div class="donate-form-area">
             <div class="section-title center">
                 <h2>Proposition de don</h2>
             </div>
 
-            <h4>Faites nous une proposition de don, nous vous contacterons directement par la suite.</h4>
-            @if(!empty($successMsg))
-            <div class="alert alert-info"> {{ $successMsg }}</div>
-            @endif
-            <form action="{{route('donsprojetproposition', [$projet->id])}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donsprojetproposition', [$projet])}}" method="post" enctype="multipart/form-data">
            
             @csrf
 
