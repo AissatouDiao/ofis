@@ -24,13 +24,14 @@ class DonspropositionRequest extends FormRequest
     public function rules()
     {
         return [
-            'nom' => 'required|min:5|max:20|alpha',
+            'nom' => 'required|max:20|alpha',
             'prenom' => 'required|max:30|alpha',
 			'email' => 'required|email',
             'adresse' => 'required|max:250',
-            'telephone'=>'required|numeric|regex:/[0-9]{7,15}/', 
+            'telephone'=>'required|numeric|regex:/[0-9]{7,15}/',    
             'montant'=>'required',
             'is_ano'=>'boolean',
+            
         ];
     }
 }
