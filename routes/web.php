@@ -95,7 +95,7 @@ Route::group(['middleware'=>['auth','admin']],function(){
     Route::get('/lireprojet/{id}', 'ProjetsController@read')->name('lireprojet');
     Route::get('/modifierprojet/{id}', 'ProjetsController@edit')->name('modifierprojet');
     Route::delete('/supprimerprojet/{id}', 'ProjetsController@delete')->name('supprimerprojet');
-    Route::put('/updateprojet', 'ProjetsController@update');
+    Route::put('/updateprojet/{id}', 'ProjetsController@update')->name('updateprojet');
     Route::get('/donationad/{id}', 'ProjetsController@donation')->name('donationad');
     Route::post('/donationad/{projet}', 'AlldonsControllers@storedonsprojets')->name('donationad');
 
