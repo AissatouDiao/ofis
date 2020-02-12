@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\ProjetRequest;
+use App\Http\Requests\UpdateprojetRequest;
 use App\Projet;
 use App\DonsProjet;
 
@@ -15,7 +16,7 @@ class ProjetsController extends Controller
     public function show(){
 
         return view('admin.projet');
-    }
+    } 
 
 
     public function enregistrerprojet(ProjetRequest $request){
@@ -83,30 +84,37 @@ class ProjetsController extends Controller
         return back();
     }
 
-    public function update(Request $request)
+    public function update(UpdateprojetRequest $request,$id)
     {
-        
-        if($request['image']->isValid()){
+
+        if(($request['image']!=null) && $request['image']->isValid()){
             $repertoire=public_path() .'/image_couv_proj';
             $extension =$request['image']->getClientOriginalExtension();
             do {
-				$nom = time() . '.' . $extension;
+                $nom = time() . '.' . $extension;
             } while(file_exists( $repertoire . '/' . $nom));
-
-            $request['image']->move( $repertoire, $nom);
-        }
-        $path_image='image_couv_proj' . '/' . $nom;
     
-     
-        $projet=Projet::where('id',$request['id'])->update(
-            [
-                'titre'=>$request['titre'],
-                'description'=>$request['description'],
-                'image'=> $path_image,
-                'montant_goal'=>$request['montant_goal']
-            ]
-        );
-        return redirect()->back()->with('successMsg','Vous avez ajouté un nouveau projet');
+            $request['image']->move( $repertoire, $nom);
+            $path_image='image_couv_proj' . '/' . $nom;
+    
+            $projet= Projet::find($id);
+            $projet->titre=$request->titre;
+            $projet->description=$request->description;
+            $projet->image=$path_image;
+            $projet->montant_goal=$request->montant_goal;
+            $projet->save();
+        
+        }
+    
+        $projet= Projet::find($id);
+        $projet->titre=$request->titre;
+        $projet->description=$request->description;
+        $projet->image=$path_image;
+        $projet->montant_goal=$request->montant_goal;
+        $projet->save();
+    
+        return redirect()->back()->with('successMsg','Vous avez modifier le projet !');
+        
     }
 
 

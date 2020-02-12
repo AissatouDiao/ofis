@@ -9,13 +9,15 @@ use App\Summernote;
 use App\Projet;
 
 use App\Http\Requests\CommentRequest;
-use App\Comment;
+use App\Comment; 
 
 
 class BlogadController extends Controller
 {
 
-   public function show(){ $summernote = new Summernote;
+   public function show(){
+       
+        $summernote = new Summernote;
     return view('admin.blog',compact('summernote'));
    }
 

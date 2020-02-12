@@ -108,7 +108,7 @@ include('../resources/views/admin/nav.php');
                       <tr>
                         <td>
                           {{ $projet->titre }}
-                        </td>
+                        </td> 
                        
                         <td class="text-right">
                         <td>{!! link_to_route('lireprojet', 'Voir', [$projet->id], ['class' => 'btn btn-success btn-block']) !!}</td>
