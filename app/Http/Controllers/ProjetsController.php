@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests\ProjetRequest;
+use App\Http\Requests\ProjetsRequest;
 use App\Http\Requests\UpdateprojetRequest;
 use App\Projet;
 use App\DonsProjet;
