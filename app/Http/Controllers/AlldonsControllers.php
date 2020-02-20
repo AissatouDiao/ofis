@@ -46,7 +46,7 @@ class AlldonsControllers extends Controller
         
     }
 
-    public function storedonsprojets(DonsprojetRequest $request,Projet $projet){
+    public function storedonsprojets(DonsprojetsRequest $request,Projet $projet){
         $dons=new Donsprojet;
         $dons->projet_id=$projet->id;
         $dons->nom=$request->nom;
