@@ -56,8 +56,8 @@ class AlldonsControllers extends Controller
         $dons->telephone=$request->telephone;
         $dons->montant=preg_replace("/[^0-9]/", '',$request->montant);
         $dons->is_ano=$request->is_ano;
-
         $dons->save();
+        
         return redirect()->back()->with('successMsg','Votre requête a été prise en compte');
     
         

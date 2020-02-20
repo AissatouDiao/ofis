@@ -205,76 +205,95 @@
             <div class="alert alert-success"> {{ $successMsg }}</div>
             @endif
 
-            <form action="{{route('donationad', [$id]) }}" method="post" enctype="multipart/form-data">
+            <form action="{{route('donationad', [$id])}}" method="post" enctype="multipart/form-data">
+           
            @csrf
-                 <?php
-                 $nombre=(int)$id;
-                 ?>
-                <h3>Informations du donneur</h3>
 
-                <div class="form-bg">
-                    <div class="row clearfix">
+           <script>
+           var montant=document.getElementById('donate-amount');
+           </script>
 
-                        
+               <?php
+                $nombre=(int)$id;
+                ?>
+       
+       @if(!empty($successMsg))
+           <div class="alert alert-info"> {{ $successMsg }}</div>
+           @endif
+               <h3>Informations du donneur</h3>
 
-                        <input type="hidden" name="projet_id" value="$nombre">
-                        
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
-                                <p>Montant</p>
-                                
-                                <input type="text" name="montant" placeholder="">
-                                {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>
+               <div class="form-bg">
+                   <div class="row clearfix">
 
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
-                                <p>Your Name*</p>
-                                
-                                <input type="text" name="nom" placeholder="">
-                                {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
-                                <p>Email*</p>
-                                <input type="text" name="email" placeholder="">
-                                {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('adresse') ? 'has-error' : '' !!}">
-                                <p>Address*</p>
-                                <input type="text" name="adresse" placeholder="">
-                                {!! $errors->first('adresse', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group {!! $errors->has('telephone') ? 'has-error' : '' !!}">
-                                <p>Phn Num*</p>
-                                <input type="text" name="telephone" placeholder="">
-                                {!! $errors->first('telephone', '<small class="help-block">:message</small>') !!}
-                            </div>
-                        </div>  
+                       
 
-                    </div>
-                </div>
+                       <input type="hidden" name="projet_id" value="$nombre">
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
+                               <p>Nom*</p>
+                               
+                               <input type="text" name="nom" placeholder="">
+                               {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
+                               <p>Prénom*</p>
+                               
+                               <input type="text" name="prenom" placeholder="">
+                               {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
+                               <p>Email*</p>
+                               <input type="text" name="email" placeholder="">
+                               {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('adresse') ? 'has-error' : '' !!}">
+                               <p>Adresse*</p>
+                               <input type="text" name="adresse" placeholder="">
+                               {!! $errors->first('adresse', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('telephone') ? 'has-error' : '' !!}">
+                               <p>Téléphone*</p>
+                               <input type="tel" name="telephone" placeholder="">
+                               {!! $errors->first('telephone', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div> 
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                           <div class="form-group {!! $errors->has('montant') ? 'has-error' : '' !!}">
+                               <p>Montant de la donation*</p>
+                               <input type='currency' name="montant"  placeholder="">
+                               {!! $errors->first('montant', '<small class="help-block">:message</small>') !!}
+                           </div>
+                       </div> 
 
-               
-                        <div class="checkbox">
-                            <label>
-                                <input name="pay-us" type="checkbox">
-                                <span>Anonyme</span>
-                            </label>
-                        </div>
+                   </div>
+               </div>
+
+               <ul class="payment-option">
+                   <li>
+                       <h4>Choisir de rester anonyme</h4>
+                   </li>
+                   <li>
+                       <div class="checkbox">
+                           <label>
+                               <input name="is_ano" type="checkbox">
+                               <span>Anonymat</span>
+                           </label>
+                       </div>
+                   </li>
                   
 
-                <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
-                    
-            
-                {!! Form::close() !!}
-
+               <div class="center"><button class="theme-btn btn-style-one" type="submit" name="ok">Faire un don</button></div>
+                   
+           
+               </form>
 
 
 
@@ -319,6 +338,39 @@
       </footer>
     </div>
   </div>
+
+
+  <script>
+    var currencyInput = document.querySelector('input[type="currency"]');
+var currency = 'XOF'; // https://www.currency-iso.org/dam/downloads/lists/list_one.xml
+
+currencyInput.addEventListener('focus', onFocus);
+currencyInput.addEventListener('blur', onBlur);
+
+function localStringToNumber( s ){
+    return Number(String(s).replace(/[^0-9.-]+/g,""));
+}
+
+function onFocus(e){
+  var value = e.target.value;
+  e.target.value = value ? localStringToNumber(value) : '';
+}
+
+function onBlur(e){
+  var value = e.target.value;
+
+  const options = {
+      maximumFractionDigits : 2,
+      currency              : currency,
+      style                 : "currency",
+      currencyDisplay       : "symbol"
+  }
+  
+  e.target.value = value 
+    ? localStringToNumber(value).toLocaleString(undefined, options)
+    : ''
+}
+</script>
   <script src="/js/jquery.js"></script>
 <script src="/js/popover.js"></script>
 <script src="/js/bootstrap.min.js"></script>
