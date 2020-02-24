@@ -100,7 +100,7 @@ class ProjetsController extends Controller
             $projet= Projet::find($id);
             $projet->titre=$request->titre;
             $projet->description=$request->description;
-            $projet->image=$request->image;
+            $projet->image=$projet->image;
             $projet->montant_goal=$request->montant_goal;
             $projet->save();
         
