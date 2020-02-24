@@ -100,7 +100,7 @@ class ProjetsController extends Controller
             $projet= Projet::find($id);
             $projet->titre=$request->titre;
             $projet->description=$request->description;
-            $projet->image=$projet->image;
+            $projet->image=$path_image;
             $projet->montant_goal=$request->montant_goal;
             $projet->save();
         
@@ -109,7 +109,7 @@ class ProjetsController extends Controller
         $projet= Projet::find($id);
         $projet->titre=$request->titre;
         $projet->description=$request->description;
-        $projet->image=$path_image;
+        $projet->image=$projet->image;
         $projet->montant_goal=$request->montant_goal;
         $projet->save();
     
