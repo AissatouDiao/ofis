@@ -202,12 +202,12 @@
               @if(!empty($successMsg))
             <div class="alert alert-info"> {{ $successMsg }}</div>
             @endif
-              <form action="{{route('updateprojet'),[$id]}}" method="post" enctype="multipart/form-data">
+              <form action="{{route('updateprojet',[$projets->id)]}}" method="post" enctype="multipart/form-data">
            @csrf
                 @method('PUT')
                 <div class="form-group {!! $errors->has('titre') ? 'has-error' : '' !!}">
              <label for="titre">Titre</label>
-             <input type="hidden" name="id" value="{{ $id }}">
+             <input type="hidden" name="id" value="{{ $projets->id }}">
               <input type="text" id="exampleForm2" name="titre"class="form-control" value="{!!$projets->titre!!}">
               {!! $errors->first('titre', '<small class="help-block">:message</small>') !!}
 
